@@ -9,10 +9,10 @@ export default function Home() {
           alt="Studio Betonika"
           className="h-auto max-h-[17.5rem] w-auto max-w-[calc(100vw-4rem)] object-contain object-left sm:max-h-[20rem] sm:max-w-5xl"
         />
-        <p className="mt-8 text-left text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
-          Brutalist games.
+        <p className="mt-8 text-left font-normal text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
+          <span className="font-bold">Brutalist games.</span>
           <br />
-          Beautiful worlds.
+          <span className="font-bold">Beautiful worlds.</span>
           <br />
           DVOR coming Autumn 2026
         </p>
