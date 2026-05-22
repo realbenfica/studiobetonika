@@ -3,18 +3,19 @@
 :root {
   --background: #1a1a1a;
   --foreground: #ededed;
-  --logo-grid: #706f6c;
-  --logo-accent: #fef0d5;
+  --logo-grid: #5b5754;
+  --logo-accent: #fbeccf;
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-background: #1a1a1a;
   --color-foreground: var(--foreground);
   --color-logo-grid: var(--logo-grid);
   --color-logo-accent: var(--logo-accent);
 }
 
+html,
 body {
-  background: var(--background);
+  background-color: #1a1a1a;
   color: var(--foreground);
 }

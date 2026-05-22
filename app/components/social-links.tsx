@@ -48,7 +48,7 @@ export function SocialLinks() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#706f6c] transition-colors hover:text-[#fef0d5]"
+          className="text-logo-grid transition-colors hover:text-logo-accent"
           aria-label={`${name} (@${USERNAME})`}
         >
           <SocialIcon path={path} />
