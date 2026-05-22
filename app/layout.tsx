@@ -1,6 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +30,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full bg-[#1a1a1a] antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full w-full overflow-x-hidden bg-[#1a1a1a] antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#1a1a1a]">{children}</body>
+      <body className="flex min-h-full w-full flex-col overflow-x-hidden bg-[#1a1a1a]">
+        {children}
+      </body>
     </html>
   );
 }

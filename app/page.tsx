@@ -2,19 +2,24 @@ import { SocialLinks } from "./components/social-links";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#1a1a1a] flex flex-col items-center justify-center px-6">
-      <img
-        src="/images/logo.png"
-        alt="Studio Betonika"
-        className="w-64 max-w-full"
-      />
-      <h1 className="mt-8 w-full max-w-5xl text-center text-white font-light uppercase leading-none tracking-[0.08em] text-[clamp(1.75rem,8vw,4.375rem)] sm:tracking-[0.12em] lg:tracking-[0.2em]">
-        Studio Betonika
-      </h1>
-      <p className="mt-3 w-full max-w-xl text-center text-white/40 text-xs tracking-widest uppercase">
-        Brutalist games. Beautiful worlds. DVOR is coming 2026
-      </p>
-      <SocialLinks />
+    <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col items-center justify-center overflow-x-clip bg-[#1a1a1a] px-4 py-8">
+      <div className="flex w-full min-w-0 max-w-full flex-col items-center">
+        <img
+          src="/images/logo3.png"
+          alt="Studio Betonika"
+          className="h-auto max-h-[17.5rem] w-full max-w-full object-contain sm:max-h-[20rem] sm:max-w-5xl"
+        />
+        <div className="mt-8 flex w-full justify-center">
+          <p className="text-left text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
+            Brutalist games.
+            <br />
+            Beautiful worlds.
+            <br />
+            DVOR coming Autumn 2026
+          </p>
+        </div>
+        <SocialLinks />
+      </div>
     </main>
-  )
+  );
 }
