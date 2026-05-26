@@ -1,3 +1,4 @@
+import { DvorLogo } from "./components/dvor-logo";
 import { SocialLinks } from "./components/social-links";
 import { SiteFooter } from "./components/site-footer";
 
@@ -16,7 +17,10 @@ export default function Home() {
             <br />
             Beautiful worlds.
             <br />
-            <span className="font-bold">DVOR coming Autumn 2026</span>
+            <span className="inline-flex flex-wrap items-center gap-x-2 font-bold">
+              <DvorLogo />
+              coming Autumn 2026
+            </span>
           </p>
           <SocialLinks />
         </div>

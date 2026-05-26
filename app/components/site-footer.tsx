@@ -1,9 +1,21 @@
 import Link from "next/link";
 
+const footerText =
+  "text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
+
 export function SiteFooter() {
   return (
-    <footer className="w-full pb-2 text-left text-logo-grid leading-none tracking-normal text-[clamp(0.4375rem,2.5vw,0.875rem)] sm:tracking-[0.08em] uppercase">
+    <footer
+      className={`w-full pb-2 text-left text-logo-grid uppercase ${footerText}`}
+    >
       <div className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3">
+        <Link
+          href="/press"
+          className="transition-colors hover:text-logo-accent"
+        >
+          Press
+        </Link>
+        <span aria-hidden="true">|</span>
         <Link
           href="/privacy-policy"
           className="transition-colors hover:text-logo-accent"
@@ -13,13 +25,21 @@ export function SiteFooter() {
         <span aria-hidden="true">|</span>
         <a
           href="mailto:hello@studiobetonika.com"
-          className="transition-colors hover:text-logo-accent"
+          className="inline-flex items-center transition-colors hover:text-logo-accent"
         >
-          hello@studiobetonika.com
+          <span>hello</span>
+          <span className="mx-0.5 inline-flex shrink-0 items-center justify-center border border-logo-grid px-0.5 leading-none">
+            @
+          </span>
+          <span>studiobetonika.com</span>
         </a>
-        <span aria-hidden="true">|</span>
-        <span>© 2026</span>
       </div>
+      <p className="mt-2 max-w-3xl normal-case leading-snug">
+        © 2026 Art Britannia Ltd (trading as Studio Betonika). Company No.
+        16631916.
+        <br />
+        Registered office: 12 Mulberry Place, Pinnell Road, London, SE9 6AR.
+      </p>
     </footer>
   );
 }
