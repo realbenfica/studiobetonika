@@ -166,10 +166,10 @@ export function PrivacyPolicyContent() {
           historical record of the global leaderboard. If you wish to have your
           leaderboard entries removed, contact us at{" "}
           <a
-            href="mailto:hello@artbritannia.com"
+            href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
           >
-            hello@artbritannia.com
+            hello@studiobetonika.com
           </a>{" "}
           and we will delete them within 30 days.
         </p>
@@ -189,10 +189,10 @@ export function PrivacyPolicyContent() {
           You can request that we delete your leaderboard entries. Contact us
           at{" "}
           <a
-            href="mailto:hello@artbritannia.com"
+            href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
           >
-            hello@artbritannia.com
+            hello@studiobetonika.com
           </a>
           .
         </p>
@@ -211,10 +211,10 @@ export function PrivacyPolicyContent() {
         <p>
           To exercise any of these rights, contact us at{" "}
           <a
-            href="mailto:hello@artbritannia.com"
+            href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
           >
-            hello@artbritannia.com
+            hello@studiobetonika.com
           </a>
           . We will respond within 30 days.
         </p>
@@ -229,10 +229,10 @@ export function PrivacyPolicyContent() {
           children under 13. If you believe a child under 13 has submitted data
           to our leaderboard, please contact us at{" "}
           <a
-            href="mailto:hello@artbritannia.com"
+            href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
           >
-            hello@artbritannia.com
+            hello@studiobetonika.com
           </a>{" "}
           and we will delete it promptly.
         </p>
@@ -257,10 +257,10 @@ export function PrivacyPolicyContent() {
         <p>
           <span className="font-bold text-white/80">Email:</span>{" "}
           <a
-            href="mailto:hello@artbritannia.com"
+            href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
           >
-            hello@artbritannia.com
+            hello@studiobetonika.com
           </a>
         </p>
         <p>
