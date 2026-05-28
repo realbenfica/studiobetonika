@@ -61,8 +61,15 @@ export function PressKitContent() {
         <p className="font-bold text-white/80">Core features:</p>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            NES-authentic mechanics — DAS, ARR, and 7-bag randomiser true to the
-            original
+            NES-authentic mechanics — DAS, ARR, and soft drop scoring true to
+            the original
+          </li>
+          <li>
+            7-bag randomiser — fair, modern, competitive standard
+          </li>
+          <li>
+            Fully tunable DAS/ARR/SDF — presets for Modern, Competitive, and
+            NES Authentic
           </li>
           <li>
             One global leaderboard across all platforms simultaneously
@@ -114,9 +121,10 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>About</h2>
         <p>
           Dvor is a falling block game built on NES-authentic mechanics — the
-          same DAS, ARR, and 7-bag randomiser that competitive players have
-          trained on for decades. It is immediately familiar and immediately
-          different.
+          same DAS, ARR, speed curves, and soft drop scoring that competitive
+          players have trained on for decades, combined with a fair 7-bag
+          randomiser and fully tunable handling. It is immediately familiar and
+          immediately different.
         </p>
         <p>
           The world of Dvor is Soviet brutalist architecture. Seven atmosphere
@@ -161,7 +169,7 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>Soundtrack</h2>
         <p>Composed and produced by Alex Almeida.</p>
-        <p>Will be available on all streaming platforms.</p>
+        <p>Will be available on Bandcamp and all streaming platforms.</p>
       </section>
 
       <section className="space-y-4">
