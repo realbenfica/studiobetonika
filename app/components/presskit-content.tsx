@@ -61,22 +61,24 @@ export function PressKitContent() {
         <p className="font-bold text-white/80">Core features:</p>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            NES-authentic mechanics — DAS, ARR, and soft drop scoring true to
-            the original
+            NES-authentic mechanics — the exact scoring, speed curves, and level
+            system
           </li>
           <li>
-            7-bag randomiser — fair, modern, competitive standard
+            7-bag randomiser — fair, modern, no drought, no frustration
           </li>
           <li>
-            Fully tunable DAS/ARR/SDF — presets for Modern, Competitive, and
-            NES Authentic
+            Tunable DAS/ARR — presets for Modern, Competitive, and NES Authentic
           </li>
           <li>
-            One global leaderboard across all platforms simultaneously
+            Starting level 1–7 — enter the world at your own pace
           </li>
           <li>Three modes — Classic, Sprint (40 lines), Daily Challenge</li>
           <li>
-            Seven atmosphere states — world transforms as level increases
+            One global leaderboard across all platforms simultaneously
+          </li>
+          <li>
+            Seven atmosphere states — the world transforms as the level rises
           </li>
           <li>Original coldwave soundtrack by Alex Almeida</li>
           <li>No advertisements. No in-app purchases. One price.</li>
@@ -110,39 +112,36 @@ export function PressKitContent() {
           home: the brutalist architecture, the coldwave atmosphere, the
           restraint and precision of the original.
         </p>
-        <p>
-          Dvor is premium. No advertisements. No in-app purchases. One
-          price, one global leaderboard across every platform simultaneously.
-        </p>
         <p>It is Studio Betonika&apos;s first game. It arrives fully formed.</p>
       </section>
 
       <section className="space-y-4">
-        <h2 className={sectionHeading}>About</h2>
+        <h2 className={sectionHeading}>About Dvor</h2>
         <p>
-          Dvor is a falling block game built on NES-authentic mechanics — the
-          same DAS, ARR, speed curves, and soft drop scoring that competitive
-          players have trained on for decades, combined with a fair 7-bag
-          randomiser and fully tunable handling. It is immediately familiar and
-          immediately different.
+          Dvor is a falling block game designed for people who want to feel
+          something. Built on NES-authentic mechanics — the same scoring, speed
+          curves, and level system the genre was born with — but made beautiful
+          for the first time.
         </p>
         <p>
           The world of Dvor is Soviet brutalist architecture. Seven atmosphere
-          states respond to the player&apos;s level — the background shifts from
-          near-black through deep blues and storm purple, culminating in a gold
-          transformation at level 18 that feels earned. Angelina Severino&apos;s
-          design work gives the game a visual identity unlike anything else in
-          the genre.
+          states evolve as you play — the background shifts from a sunny
+          afternoon through first snow, heavy snowfall, blizzard, and whiteout,
+          culminating in a gold transformation that feels earned. Angelina
+          Severino&apos;s design gives the game a visual identity unlike anything
+          else in the genre.
+        </p>
+        <p>
+          Three modes: Classic for score, Sprint across 40 lines, and Daily
+          Challenge — one attempt per day, the same piece sequence for every
+          player on earth. A single global leaderboard connects every platform
+          simultaneously. Starting level 1–7 lets beginners enter the world
+          gently and veterans start inside the storm.
         </p>
         <p>
           The soundtrack is original coldwave, composed and produced by Alex
           Almeida. Music evolves dynamically with the atmosphere states. There
           are no advertisements. No in-app purchases. One price.
-        </p>
-        <p>
-          Three modes: Classic for score, Sprint for speed across 40 lines, and
-          Daily Challenge — one attempt per day, the same piece sequence for
-          every player on earth, one global leaderboard.
         </p>
       </section>
 
