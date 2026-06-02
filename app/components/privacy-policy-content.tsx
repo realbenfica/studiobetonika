@@ -1,13 +1,6 @@
 export function PrivacyPolicyContent() {
   return (
-    <div className="mx-auto w-full max-w-3xl text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
-      <section className="space-y-2">
-        <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          Dvor — Studio Betonika
-        </h2>
-        <p className="font-bold text-white/80">Last updated: May 2026</p>
-      </section>
-
+    <div className="mx-auto w-full max-w-3xl space-y-8 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
       <section className="space-y-4">
         <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
           Who We Are
@@ -17,15 +10,9 @@ export function PrivacyPolicyContent() {
           Betonika.
         </p>
         <p>
-          <span className="font-bold text-white/80">Art Britannia Ltd</span>
+          Art Britannia Ltd — Company number: 16631916
           <br />
-          Company number: 16631916
-          <br />
-          12 Mulberry Place, Pinnell Road
-          <br />
-          London, United Kingdom
-          <br />
-          SE9 6AR
+          12 Mulberry Place, Pinnell Road, London, United Kingdom, SE9 6AR
         </p>
         <p>
           Contact:{" "}
@@ -36,78 +23,42 @@ export function PrivacyPolicyContent() {
             hello@studiobetonika.com
           </a>
         </p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
+          The Short Version
+        </h2>
         <p>
-          We are the data controller for any personal data collected through the
-          Dvor application.
+          Dvor collects nothing. No account. No internet connection required. No
+          data leaves your device. Ever.
         </p>
       </section>
 
       <section className="space-y-4">
         <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          What We Collect and Why
+          What We Collect
         </h2>
         <p>
-          We designed Dvor to collect as little data as possible. Here is
-          exactly what we collect and why.
+          Your high score is stored locally on your device using standard
+          platform storage. It never leaves your device. We do not have access
+          to it. It is deleted when you uninstall the game.
         </p>
-        <div className="space-y-4">
-          <div>
-            <h3 className="font-bold text-white/80">Leaderboard Username</h3>
-            <p>
-              When you choose to submit a score to the global leaderboard, you
-              enter a username of your choice (maximum 12 characters). This
-              username is publicly visible on the leaderboard alongside your
-              score.
-            </p>
-            <p className="font-bold text-white/80">
-              We do not ask for your real name. The username is entirely your
-              choice and can be anonymous.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-white/80">Scores and Game Data</h3>
-            <p>When you submit to the leaderboard we store:</p>
-            <ul className="list-inside list-disc space-y-1">
-              <li>Your chosen username</li>
-              <li>Your score or sprint time</li>
-              <li>The game mode (Classic, Sprint, or Daily Challenge)</li>
-              <li>A timestamp of when the score was submitted</li>
-            </ul>
-            <p>
-              We do not store any other information. We do not collect your email
-              address, device identifiers, location, or any other personal data.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-white/80">Daily Challenge Attempt</h3>
-            <p>
-              To enforce the one-attempt-per-day rule for the Daily Challenge
-              mode, we store locally on your device a record of whether you have
-              played today&apos;s challenge. This data never leaves your device.
-            </p>
-          </div>
-        </div>
+        <p>That is the complete list.</p>
       </section>
 
       <section className="space-y-4">
         <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
           What We Do Not Collect
         </h2>
-        <p>To be explicit about our approach:</p>
-        <ul className="list-inside list-disc space-y-1">
-          <li>
-            We do not collect your name, email address, or any contact
-            information
-          </li>
-          <li>We do not collect your location</li>
-          <li>We do not collect device identifiers or advertising identifiers</li>
-          <li>We do not use cookies or tracking technologies</li>
-          <li>We do not use analytics services</li>
-          <li>We do not serve advertisements</li>
-          <li>We do not sell any data to third parties</li>
-          <li>
-            We do not share any data with third parties except as described below
-          </li>
+        <ul className="list-outside list-disc space-y-1 pl-5">
+          <li>No name, email address, or contact information</li>
+          <li>No location data</li>
+          <li>No device identifiers or advertising identifiers</li>
+          <li>No gameplay statistics or session data</li>
+          <li>No analytics of any kind</li>
+          <li>No cookies or tracking technologies</li>
+          <li>No third party services of any kind</li>
         </ul>
       </section>
 
@@ -115,108 +66,9 @@ export function PrivacyPolicyContent() {
         <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
           Third Party Services
         </h2>
-        <div>
-          <h3 className="font-bold text-white/80">Firebase (Google)</h3>
-          <p>
-            We use Firebase Firestore, provided by Google LLC, to store
-            leaderboard data. Your chosen username and scores are stored on
-            Firebase servers located in the European Union (europe-west2,
-            London region).
-          </p>
-          <p>
-            Google&apos;s privacy policy is available at:{" "}
-            <a
-              href="https://policies.google.com/privacy"
-              className="text-logo-accent transition-colors hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://policies.google.com/privacy
-            </a>
-          </p>
-          <p>
-            Firebase processes data on our behalf under a data processing
-            agreement in compliance with GDPR.
-          </p>
-        </div>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          Legal Basis for Processing
-        </h2>
         <p>
-          Under the UK General Data Protection Regulation (UK GDPR) and the EU
-          General Data Protection Regulation (EU GDPR), our legal basis for
-          processing leaderboard data is <span className="font-bold text-white/80">legitimate interests</span> — specifically, providing the global
-          leaderboard feature that is a core part of the game.
-        </p>
-        <p>
-          You are not required to submit your score to the leaderboard. The game
-          is fully playable without submitting any data.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          Data Retention
-        </h2>
-        <p>
-          Leaderboard scores are retained indefinitely as they form the
-          historical record of the global leaderboard. If you wish to have your
-          leaderboard entries removed, contact us at{" "}
-          <a
-            href="mailto:hello@studiobetonika.com"
-            className="text-logo-accent transition-colors hover:text-white"
-          >
-            hello@studiobetonika.com
-          </a>{" "}
-          and we will delete them within 30 days.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          Your Rights
-        </h2>
-        <p>Under UK GDPR and EU GDPR you have the following rights:</p>
-        <p>
-          <span className="font-bold text-white/80">Right to access</span> — You
-          can request a copy of any data we hold about you.
-        </p>
-        <p>
-          <span className="font-bold text-white/80">Right to erasure</span> —
-          You can request that we delete your leaderboard entries. Contact us
-          at{" "}
-          <a
-            href="mailto:hello@studiobetonika.com"
-            className="text-logo-accent transition-colors hover:text-white"
-          >
-            hello@studiobetonika.com
-          </a>
-          .
-        </p>
-        <p>
-          <span className="font-bold text-white/80">Right to rectification</span>{" "}
-          — If your username contains an error you can request it be corrected.
-        </p>
-        <p>
-          <span className="font-bold text-white/80">Right to object</span> — You
-          can object to processing of your data.
-        </p>
-        <p>
-          <span className="font-bold text-white/80">Right to restrict processing</span>{" "}
-          — You can request we restrict how we use your data.
-        </p>
-        <p>
-          To exercise any of these rights, contact us at{" "}
-          <a
-            href="mailto:hello@studiobetonika.com"
-            className="text-logo-accent transition-colors hover:text-white"
-          >
-            hello@studiobetonika.com
-          </a>
-          . We will respond within 30 days.
+          Dvor uses none. No analytics platform, no cloud storage, no
+          advertising network, no external data processing of any kind.
         </p>
       </section>
 
@@ -225,37 +77,43 @@ export function PrivacyPolicyContent() {
           Children
         </h2>
         <p>
-          Dvor is rated for all ages. We do not knowingly collect data from
-          children under 13. If you believe a child under 13 has submitted data
-          to our leaderboard, please contact us at{" "}
+          Dvor is rated for all ages. We do not collect data from anyone,
+          including children.
+        </p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
+          Your Rights
+        </h2>
+        <p>
+          As we hold no data about you, there is nothing to access, correct, or
+          delete. If you have any questions contact{" "}
           <a
             href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
           >
             hello@studiobetonika.com
           </a>{" "}
-          and we will delete it promptly.
+          and we will respond within 30 days.
         </p>
       </section>
 
       <section className="space-y-4">
         <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          Changes to This Policy
+          Changes
         </h2>
         <p>
-          If we make material changes to this privacy policy we will update the
-          date at the top of this page and notify users through the application
-          where reasonably possible.
+          If we ever change this policy in a material way we will update the
+          date above and notify users through the application.
         </p>
       </section>
 
       <section className="space-y-4">
         <h2 className="text-white/90 font-bold uppercase tracking-[0.08em]">
-          Contact and Complaints
+          Contact
         </h2>
-        <p>For any privacy questions or requests:</p>
         <p>
-          <span className="font-bold text-white/80">Email:</span>{" "}
           <a
             href="mailto:hello@studiobetonika.com"
             className="text-logo-accent transition-colors hover:text-white"
@@ -264,20 +122,10 @@ export function PrivacyPolicyContent() {
           </a>
         </p>
         <p>
-          <span className="font-bold text-white/80">Post:</span>
-          <br />
-          Art Britannia Ltd
-          <br />
-          12 Mulberry Place, Pinnell Road
-          <br />
-          London, United Kingdom
-          <br />
-          SE9 6AR
+          Art Britannia Ltd, 12 Mulberry Place, Pinnell Road, London, SE9 6AR
         </p>
         <p>
-          If you are unhappy with how we handle your data you have the right to
-          lodge a complaint with the UK Information Commissioner&apos;s Office
-          (ICO) at{" "}
+          UK ICO:{" "}
           <a
             href="https://ico.org.uk"
             className="text-logo-accent transition-colors hover:text-white"
@@ -286,18 +134,13 @@ export function PrivacyPolicyContent() {
           >
             ico.org.uk
           </a>{" "}
-          or by calling 0303 123 1113.
-        </p>
-        <p>
-          If you are in the EU, you may contact your local data protection
-          authority.
+          — 0303 123 1113
         </p>
       </section>
 
-      <section className="space-y-1 text-white/50">
-        <p>Art Britannia Ltd — Company number 16631916</p>
-        <p>Trading as Studio Betonika</p>
-      </section>
+      <p className="pt-2 text-white/50 italic">
+        Studio Betonika — Last updated: June 2026
+      </p>
     </div>
   );
 }

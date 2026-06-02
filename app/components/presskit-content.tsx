@@ -13,6 +13,100 @@ export function PressKitContent() {
       </div>
 
       <section className="space-y-4">
+        <h2 className={sectionHeading}>Studio Betonika</h2>
+        <p>
+          Studio Betonika is an independent game studio founded by Alex and
+          Angelina, a husband and wife based in London.
+        </p>
+        <p>
+          Angelina is a world-class designer. Alex writes code and makes music.
+          Together they make games of considered design and psychological depth.
+        </p>
+        <p>
+          Their parents belong to the same generation as Alexey Pajitnov, who
+          created Tetris in 1984. Angelina grew up in the Soviet Union and later
+          lived in Minsk. The family is now settled in London with three
+          daughters.
+        </p>
+        <p>
+          Studio Betonika takes its name from brutalist concrete — beton, the
+          material, the aesthetic, the world Tetris was born in. Their first
+          game is Dvor. The word means courtyard in Russian. The space between
+          the blocks. The place where Soviet children played.
+        </p>
+        <p>It is their first game. It arrives fully formed.</p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>Dvor - The space between the blocks</h2>
+        <p>Dvor is a falling block game designed for people who want to feel something.</p>
+        <p>
+          It is built on NES-authentic mechanics — the same scoring, speed
+          curves, and rules the genre was born with. But for the first time, it
+          is beautiful.
+        </p>
+        <p>
+          The world of Dvor is Soviet brutalist architecture. Seven atmosphere
+          states evolve as you play — from a sunny afternoon through first snow,
+          heavy snowfall, blizzard, and whiteout — culminating in a gold
+          transformation that has to be earned. Angelina Severino&apos;s design
+          gives the game a visual identity unlike anything else in the genre.
+        </p>
+        <p>
+          Dvor introduces Panelka. A new scoring moment named after the Soviet
+          prefabricated apartment blocks the pieces are made from. Build a solid
+          wall — nine columns full, one tunnel open — reach the height of a
+          building, and the game rewards you. Break it. Rebuild it. Earn it
+          again.
+        </p>
+        <p>
+          The soundtrack is original coldwave, composed and produced by Alex
+          Almeida. It evolves dynamically as the atmosphere shifts. By the time
+          the gold state arrives, the music has changed completely.
+        </p>
+        <p>
+          No advertisements. No in-app purchases. No leaderboard. No daily
+          obligations. No online requirement. One price.
+        </p>
+        <p>
+          You choose your starting level — one per atmosphere state, from the
+          quiet of a sunny afternoon to the edge of a storm. You play. The world
+          builds around you. If you survive long enough it turns gold, and the
+          speed keeps climbing until it is over.
+        </p>
+        <p>
+          Your high score is the only thing that persists. It is enough. It has
+          always been enough.
+        </p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>Features</h2>
+        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+          <li>
+            NES-authentic mechanics — exact scoring, speed curves, and level
+            system
+          </li>
+          <li>
+            Panelka — a new scoring mechanic unique to Dvor, named after the
+            architecture the pieces are built from
+          </li>
+          <li>Seven atmosphere states — the world transforms as you play</li>
+          <li>Level selector 1–7 — choose your starting atmosphere</li>
+          <li>
+            Tunable DAS/ARR — presets for Modern, Competitive, and NES
+            Authentic
+          </li>
+          <li>
+            Original coldwave soundtrack by Alex Almeida, dynamically evolving
+          </li>
+          <li>
+            No advertisements. No in-app purchases. No leaderboard. One price.
+          </li>
+        </ul>
+      </section>
+
+      <section className="space-y-4">
         <h2 className={sectionHeading}>Key Facts</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
@@ -43,7 +137,6 @@ export function PressKitContent() {
           </li>
           <li>
             <span className="font-bold text-white/80">Price:</span> £6.99–£7.99
-            Steam and console
           </li>
           <li>
             <span className="font-bold text-white/80">Website:</span>{" "}
@@ -58,117 +151,25 @@ export function PressKitContent() {
             </a>
           </li>
         </ul>
-        <p className="font-bold text-white/80">Core features:</p>
-        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
-          <li>
-            NES-authentic mechanics — the exact scoring, speed curves, and level
-            system
-          </li>
-          <li>
-            7-bag randomiser — fair, modern, no drought, no frustration
-          </li>
-          <li>
-            Tunable DAS/ARR — presets for Modern, Competitive, and NES Authentic
-          </li>
-          <li>
-            Starting level 1–7 — enter the world at your own pace
-          </li>
-          <li>Three modes — Classic, Sprint (40 lines), Daily Challenge</li>
-          <li>
-            One global leaderboard across all platforms simultaneously
-          </li>
-          <li>
-            Seven atmosphere states — the world transforms as the level rises
-          </li>
-          <li>Original coldwave soundtrack by Alex Almeida</li>
-          <li>No advertisements. No in-app purchases. One price.</li>
-        </ul>
       </section>
 
       <section className="space-y-4">
-        <h2 className={sectionHeading}>Studio Story</h2>
+        <h2 className={sectionHeading}>Screenshots & Trailer</h2>
         <p>
-          Studio Betonika is an independent game studio founded by Alex and
-          Angelina, a husband and wife based in London.
-        </p>
-        <p>
-          Angelina is a world-class designer. Alex writes code and makes music.
-          Together they make games of considered design and psychological depth.
-        </p>
-        <p>
-          Their parents belong to the same generation as Alexey Pajitnov, who
-          created Tetris in 1984. Angelina grew up in the Soviet Union and later
-          lived in Minsk. The family is now settled in London with three
-          daughters.
-        </p>
-        <p>
-          Studio Betonika takes its name from brutalist concrete architecture —
-          beton, the material, the aesthetic, the world Tetris was born in.
-        </p>
-        <p>
-          Their first game is Dvor. The word means courtyard in Russian —
-          the space between the blocks, the place where Soviet children played.
-          It is a falling block game that returns the genre to its cultural
-          home: the brutalist architecture, the coldwave atmosphere, the
-          restraint and precision of the original.
-        </p>
-        <p>It is Studio Betonika&apos;s first game. It arrives fully formed.</p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>About Dvor</h2>
-        <p>
-          Dvor is a falling block game designed for people who want to feel
-          something. Built on NES-authentic mechanics — the same scoring, speed
-          curves, and level system the genre was born with — but made beautiful
-          for the first time.
-        </p>
-        <p>
-          The world of Dvor is Soviet brutalist architecture. Seven atmosphere
-          states evolve as you play — the background shifts from a sunny
-          afternoon through first snow, heavy snowfall, blizzard, and whiteout,
-          culminating in a gold transformation that feels earned. Angelina
-          Severino&apos;s design gives the game a visual identity unlike anything
-          else in the genre.
-        </p>
-        <p>
-          Three modes: Classic for score, Sprint across 40 lines, and Daily
-          Challenge — one attempt per day, the same piece sequence for every
-          player on earth. A single global leaderboard connects every platform
-          simultaneously. Starting level 1–7 lets beginners enter the world
-          gently and veterans start inside the storm.
-        </p>
-        <p>
-          The soundtrack is original coldwave, composed and produced by Alex
-          Almeida. Music evolves dynamically with the atmosphere states. There
-          are no advertisements. No in-app purchases. One price.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Screenshots</h2>
-        <p className="italic text-white/50">
-          Will be available at{" "}
-          <a href="/press" className={linkClass}>
+          60 second gameplay trailer and screenshots — available at{" "}
+          <a href="https://studiobetonika.com/press" className={linkClass}>
             studiobetonika.com/press
-          </a>
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Trailer</h2>
-        <p className="italic text-white/50">
-          60 second gameplay trailer — will be available at{" "}
-          <a href="/press" className={linkClass}>
-            studiobetonika.com/press
-          </a>
+          </a>{" "}
+          before launch.
         </p>
       </section>
 
       <section className="space-y-4">
         <h2 className={sectionHeading}>Soundtrack</h2>
         <p>Composed and produced by Alex Almeida.</p>
-        <p>Will be available on Bandcamp and all streaming platforms.</p>
+        <p>
+          Available on Bandcamp and all streaming platforms from September 2026.
+        </p>
       </section>
 
       <section className="space-y-4">
@@ -182,48 +183,21 @@ export function PressKitContent() {
           </li>
           <li>
             <span className="font-bold text-white/80">Press kit:</span>{" "}
-            <a href="/press" className={linkClass}>
+            <a href="https://studiobetonika.com/press" className={linkClass}>
               studiobetonika.com/press
             </a>
           </li>
           <li>
             <span className="font-bold text-white/80">Privacy policy:</span>{" "}
-            <a href="/privacy-policy" className={linkClass}>
+            <a href="https://studiobetonika.com/privacy" className={linkClass}>
               studiobetonika.com/privacy
             </a>
           </li>
           <li>
-            <span className="font-bold text-white/80">TikTok:</span>{" "}
-            <a
-              href="https://www.tiktok.com/@studiobetonika"
-              className={linkClass}
-            >
-              @studiobetonika
-            </a>
-          </li>
-          <li>
-            <span className="font-bold text-white/80">Bluesky:</span>{" "}
-            <a
-              href="https://bsky.app/profile/studiobetonika.bsky.social"
-              className={linkClass}
-            >
-              @studiobetonika
-            </a>
-          </li>
-          <li>
-            <span className="font-bold text-white/80">X:</span>{" "}
-            <a href="https://x.com/studiobetonika" className={linkClass}>
-              @studiobetonika
-            </a>
-          </li>
-          <li>
-            <span className="font-bold text-white/80">Instagram:</span>{" "}
-            <a
-              href="https://www.instagram.com/studiobetonika"
-              className={linkClass}
-            >
-              @studiobetonika
-            </a>
+            <span className="font-bold text-white/80">
+              TikTok / Instagram / Bluesky / X:
+            </span>{" "}
+            @studiobetonika
           </li>
         </ul>
       </section>
@@ -240,9 +214,8 @@ export function PressKitContent() {
           <br />
           London, United Kingdom
         </p>
+        <p className="text-white/50 italic">Last updated: June 2026</p>
       </section>
-
-      <p className="text-white/50 italic">Last updated: May 2026</p>
     </div>
   );
 }
