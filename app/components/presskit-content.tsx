@@ -30,6 +30,7 @@ export function PressKitContent() {
           Nation. She is also the artist behind Posteress, a poster art studio
           featured in Grafik Editions and People of Print, with an apparel
           collaboration for Zara Man.{" "}
+          <br></br>
           <a
             href="https://angelinaseverino.com"
             className={linkClass}
