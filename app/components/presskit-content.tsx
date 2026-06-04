@@ -212,7 +212,7 @@ export function PressKitContent() {
             <span className="font-bold text-white/80">Visual assets:</span>{" "}
             60-second gameplay trailer and screenshots available at{" "}
             <a href="/dvor/press" className={linkClass}>
-              studiobetonika.com/press
+              studiobetonika.com/dvor/press
             </a>{" "}
             before launch.
           </li>
