@@ -193,13 +193,13 @@ export function PressKitContent() {
           <li>
             <span className="font-bold text-white/80">Press kit:</span>{" "}
             <a href="/dvor/press" className={linkClass}>
-              studiobetonika.com/press
+              studiobetonika.com/dvor/press
             </a>
           </li>
           <li>
             <span className="font-bold text-white/80">Privacy policy:</span>{" "}
             <a href="/dvor/privacy-policy" className={linkClass}>
-              studiobetonika.com/privacy
+              studiobetonika.com/dvor/privacy-policy
             </a>
           </li>
         </ul>
