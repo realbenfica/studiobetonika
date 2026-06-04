@@ -9,8 +9,8 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>Studio Betonika</h2>
         <p>
-          Studio Betonika is an independent game studio founded by Angelina and
-          Alex Severino, a husband and wife based in London.
+          Studio Betonika is an independent game studio founded by Angelina Severino and
+          Alex Almeida, a husband and wife based in London.
         </p>
         <p>
           Angelina Severino is an award-winning Brand and Product Design Leader
@@ -43,7 +43,7 @@ export function PressKitContent() {
         <p>
           Their parents belong to the same generation as Alexey Pajitnov, who
           created Tetris in 1984. Angelina grew up in the Soviet Union and later
-          lived in Minsk. The family is now settled in London with three
+          lived in Minsk. The family is now settled in London with their
           daughters.
         </p>
         <p>
