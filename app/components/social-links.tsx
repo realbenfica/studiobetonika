@@ -36,10 +36,10 @@ function SocialIcon({ path }: { path: string }) {
   );
 }
 
-export function SocialLinks() {
+export function SocialLinks({ className = "mt-8" }: { className?: string }) {
   return (
     <nav
-      className="mt-8 flex max-w-full flex-wrap items-center justify-start gap-5 sm:gap-8"
+      className={`flex max-w-full flex-wrap items-center justify-start gap-5 sm:gap-8 ${className}`}
       aria-label="Social media"
     >
       {SOCIALS.map(({ name, href, path }) => (

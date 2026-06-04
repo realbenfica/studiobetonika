@@ -1,28 +1,41 @@
 import Link from "next/link";
+import { SocialLinks } from "./social-links";
 
 const footerText =
   "text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
 
-export function SiteFooter() {
+type SiteFooterProps = {
+  variant?: "default" | "home";
+};
+
+export function SiteFooter({ variant = "default" }: SiteFooterProps) {
+  const isHome = variant === "home";
+
   return (
     <footer
       className={`w-full pb-2 text-left text-logo-grid uppercase ${footerText}`}
     >
+      {isHome && <SocialLinks className="mb-6" />}
+
       <div className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3">
-        <Link
-          href="/press"
-          className="transition-colors hover:text-logo-accent"
-        >
-          Press
-        </Link>
-        <span aria-hidden="true">|</span>
-        <Link
-          href="/privacy-policy"
-          className="transition-colors hover:text-logo-accent"
-        >
-          Privacy Policy
-        </Link>
-        <span aria-hidden="true">|</span>
+        {!isHome && (
+          <>
+            <Link
+              href="/press"
+              className="transition-colors hover:text-logo-accent"
+            >
+              Press
+            </Link>
+            <span aria-hidden="true">|</span>
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-logo-accent"
+            >
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">|</span>
+          </>
+        )}
         <a
           href="mailto:hello@studiobetonika.com"
           className="inline-flex items-center transition-colors hover:text-logo-accent"

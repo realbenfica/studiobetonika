@@ -1,6 +1,9 @@
+import Link from "next/link";
 import { DvorLogo } from "./components/dvor-logo";
-import { SocialLinks } from "./components/social-links";
 import { SiteFooter } from "./components/site-footer";
+
+const pageLinkClass =
+  "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
 
 export default function Home() {
   return (
@@ -22,12 +25,25 @@ export default function Home() {
               coming Autumn 2026
             </span>
           </p>
-          <SocialLinks />
+          <nav
+            className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
+            aria-label="Site pages"
+          >
+            <Link href="/press" className={pageLinkClass}>
+              Press Kit
+            </Link>
+            <span className="text-logo-grid" aria-hidden="true">
+              |
+            </span>
+            <Link href="/privacy-policy" className={pageLinkClass}>
+              Privacy Policy
+            </Link>
+          </nav>
         </div>
       </div>
       <div className="flex w-full justify-center">
         <div className="flex w-fit max-w-full min-w-0 flex-col items-start">
-          <SiteFooter />
+          <SiteFooter variant="home" />
         </div>
       </div>
     </main>

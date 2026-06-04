@@ -14,7 +14,7 @@ export default function PressPage() {
       <PageIcon />
       <div className="mx-auto w-full max-w-3xl flex-1 text-center">
         <h1 className="mb-12 text-white font-bold uppercase tracking-[0.08em] text-[clamp(1.5rem,5vw,2.5rem)]">
-          Press Kit
+          Press Kit — Dvor
         </h1>
         <PressKitContent />
       </div>
