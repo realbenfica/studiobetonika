@@ -1,5 +1,3 @@
-import { DvorLogo } from "./dvor-logo";
-
 const sectionHeading =
   "text-white/90 font-bold uppercase tracking-[0.08em]";
 
@@ -8,12 +6,6 @@ const linkClass = "text-logo-accent transition-colors hover:text-white";
 export function PressKitContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
-      <div className="flex justify-center pb-2">
-        <DvorLogo size="large" />
-      </div>
-
-      <p className="font-bold text-white/80">Last updated: June 2026</p>
-
       <section className="space-y-4">
         <h2 className={sectionHeading}>Studio Betonika</h2>
         <p>
@@ -21,16 +13,15 @@ export function PressKitContent() {
           Alex Severino, a husband and wife based in London.
         </p>
         <p>
-          Angelina is an award-winning Brand and Product Design Leader with two
-          decades of experience across global advertising and technology. Art
-          Director at TBWA, DDB and Starcom, leading campaigns for Coca-Cola,
-          Mastercard and Volkswagen. Design Lead at Gamgee and Lebara. Keynote
-          speaker across design and technology. Global Talent visa holder
-          recognised for Exceptional Talent in Digital Technology by Tech
+          Angelina Severino is an award-winning Brand and Product Design Leader
+          with two decades of experience across global advertising and
+          technology. Art Director at TBWA, DDB and Starcom, leading campaigns
+          for Coca-Cola, Mastercard and Volkswagen. Design Lead at Gamgee and
+          Lebara. Keynote speaker across design and technology. Global Talent visa
+          holder recognised for Exceptional Talent in Digital Technology by Tech
           Nation. She is also the artist behind Posteress, a poster art studio
           featured in Grafik Editions and People of Print, with an apparel
           collaboration for Zara Man.{" "}
-          <br></br>
           <a
             href="https://angelinaseverino.com"
             className={linkClass}
@@ -88,27 +79,16 @@ export function PressKitContent() {
           statement — the space around the board is part of the design.
         </p>
         <p>
-          The soundtrack is original coldwave, composed and produced by Alex de
-          Alma. It lives in the same cultural space as the most resonant
-          post-Soviet music of the last decade — the world of Molchat Doma, the
-          sound of brutalism set to music. It evolves dynamically as the
-          atmosphere shifts. By the time the gold state arrives, the music has
-          changed completely.{" "}
-          <a
-            href="https://alexdealma.com"
-            className={linkClass}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            alexdealma.com
-          </a>
+          The soundtrack is original, composed and produced by Alex Almeida. It
+          evolves dynamically as the atmosphere shifts. By the time the gold
+          state arrives, the music has changed completely.
         </p>
         <p>
-          Dvor introduces <span className="font-bold text-white/80">Panelka</span>
-          . A new scoring moment named after the Soviet prefabricated apartment
-          blocks the pieces are made from. Build a solid wall — nine columns
-          full, one tunnel open — reach the height of a building, and the game
-          rewards you. Break it. Rebuild it. Earn it again.
+          Dvor introduces Panelka. A new scoring moment named after the Soviet
+          prefabricated apartment blocks the pieces are made from. Build a solid
+          wall — nine columns full, one tunnel open — reach the height of a
+          building, and the game rewards you. Break it. Rebuild it. Earn it
+          again.
         </p>
         <p>
           No advertisements. No in-app purchases. No leaderboard. No daily
@@ -151,10 +131,8 @@ export function PressKitContent() {
             presets for Modern, Competitive, and NES Authentic.
           </li>
           <li>
-            <span className="font-bold text-white/80">
-              Original coldwave soundtrack
-            </span>{" "}
-            — composed by Alex de Alma, dynamically evolving.
+            <span className="font-bold text-white/80">Original soundtrack</span> —
+            composed by Alex Almeida, dynamically evolving.
           </li>
           <li>
             <span className="font-bold text-white/80">Pure experience</span> — No
@@ -210,12 +188,30 @@ export function PressKitContent() {
       </section>
 
       <section className="space-y-4">
+        <h2 className={sectionHeading}>Press & Legal</h2>
+        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+          <li>
+            <span className="font-bold text-white/80">Press kit:</span>{" "}
+            <a href="/dvor/press" className={linkClass}>
+              studiobetonika.com/press
+            </a>
+          </li>
+          <li>
+            <span className="font-bold text-white/80">Privacy policy:</span>{" "}
+            <a href="/dvor/privacy-policy" className={linkClass}>
+              studiobetonika.com/privacy
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section className="space-y-4">
         <h2 className={sectionHeading}>Screenshots & Trailer</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
             <span className="font-bold text-white/80">Visual assets:</span>{" "}
             60-second gameplay trailer and screenshots available at{" "}
-            <a href="https://studiobetonika.com/press" className={linkClass}>
+            <a href="/dvor/press" className={linkClass}>
               studiobetonika.com/press
             </a>{" "}
             before launch.
@@ -228,42 +224,12 @@ export function PressKitContent() {
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
             <span className="font-bold text-white/80">Audio:</span> Composed and
-            produced by Alex de Alma.
+            produced by Alex Almeida.
           </li>
           <li>
             <span className="font-bold text-white/80">Availability:</span>{" "}
             Available on Bandcamp and all streaming platforms from September
             2026.
-          </li>
-        </ul>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Links</h2>
-        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
-          <li>
-            <span className="font-bold text-white/80">Website:</span>{" "}
-            <a href="https://studiobetonika.com" className={linkClass}>
-              studiobetonika.com
-            </a>
-          </li>
-          <li>
-            <span className="font-bold text-white/80">Press kit:</span>{" "}
-            <a href="https://studiobetonika.com/press" className={linkClass}>
-              studiobetonika.com/press
-            </a>
-          </li>
-          <li>
-            <span className="font-bold text-white/80">Privacy policy:</span>{" "}
-            <a href="/privacy-policy" className={linkClass}>
-              studiobetonika.com/privacy
-            </a>
-          </li>
-          <li>
-            <span className="font-bold text-white/80">
-              TikTok / Instagram / Bluesky / X:
-            </span>{" "}
-            @studiobetonika
           </li>
         </ul>
       </section>
@@ -287,6 +253,10 @@ export function PressKitContent() {
           </li>
         </ul>
       </section>
+
+      <p className="pt-2 text-white/50 italic">
+        Studio Betonika — Last updated: June 2026
+      </p>
     </div>
   );
 }

@@ -21,14 +21,14 @@ export function SiteFooter({ variant = "default" }: SiteFooterProps) {
         {!isHome && (
           <>
             <Link
-              href="/press"
+              href="/dvor/press"
               className="transition-colors hover:text-logo-accent"
             >
               Press
             </Link>
             <span aria-hidden="true">|</span>
             <Link
-              href="/privacy-policy"
+              href="/dvor/privacy-policy"
               className="transition-colors hover:text-logo-accent"
             >
               Privacy Policy

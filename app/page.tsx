@@ -19,26 +19,29 @@ export default function Home() {
             Brutalist games.
             <br />
             Beautiful worlds.
-            <br />
-            <span className="inline-flex flex-wrap items-center gap-x-2 font-bold">
-              <DvorLogo />
-              coming Autumn 2026
-            </span>
           </p>
-          <nav
-            className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
-            aria-label="Site pages"
-          >
-            <Link href="/press" className={pageLinkClass}>
+          <div className="mt-16 space-y-4">
+            <p className="mb-0 text-left font-bold text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
+              <span className="inline-flex flex-wrap items-center gap-x-2">
+                <DvorLogo />
+                coming Autumn 2026
+              </span>
+            </p>
+            <nav
+              className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
+              aria-label="Site pages"
+            >
+            <Link href="/dvor/press" className={pageLinkClass}>
               Press Kit
             </Link>
             <span className="text-logo-grid" aria-hidden="true">
               |
             </span>
-            <Link href="/privacy-policy" className={pageLinkClass}>
+            <Link href="/dvor/privacy-policy" className={pageLinkClass}>
               Privacy Policy
             </Link>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
       <div className="flex w-full justify-center">
