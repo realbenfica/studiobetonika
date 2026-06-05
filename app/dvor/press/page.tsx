@@ -22,9 +22,7 @@ export default function PressPage() {
         </h1>
         <PressKitContent />
       </div>
-      <div className="mx-auto mt-16 flex w-fit max-w-full justify-center">
-        <SiteFooter />
-      </div>
+      <SiteFooter className="mt-16" />
     </main>
   );
 }

@@ -2,22 +2,29 @@ import Link from "next/link";
 import { SocialLinks } from "./social-links";
 
 const footerText =
-  "text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
+  "text-[clamp(0.375rem,2vw,0.625rem)] leading-none tracking-normal sm:text-[clamp(0.4375rem,2.5vw,0.875rem)] sm:tracking-[0.08em]";
 
 type SiteFooterProps = {
   variant?: "default" | "home";
+  className?: string;
 };
 
-export function SiteFooter({ variant = "default" }: SiteFooterProps) {
+export function SiteFooter({ variant = "default", className = "" }: SiteFooterProps) {
   const isHome = variant === "home";
 
   return (
     <footer
-      className={`w-full pb-2 text-left text-logo-grid uppercase ${footerText}`}
+      className={`pb-2 text-logo-grid uppercase ${footerText} ${
+        isHome ? "w-max max-w-full self-start text-left" : "mx-auto w-fit text-center"
+      } ${className}`}
     >
       {isHome && <SocialLinks className="mb-6" />}
 
-      <div className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3">
+      <div
+        className={`flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3 ${
+          isHome ? "" : "justify-center"
+        }`}
+      >
         {!isHome && (
           <>
             <Link

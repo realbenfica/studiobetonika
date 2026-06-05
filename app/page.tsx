@@ -8,8 +8,8 @@ const pageLinkClass =
 export default function Home() {
   return (
     <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col items-center overflow-x-clip bg-[#1a1a1a] px-8 py-8 sm:px-4">
-      <div className="flex w-full flex-1 flex-col items-center justify-center">
-        <div className="flex w-fit max-w-full min-w-0 flex-col items-start">
+      <div className="flex min-h-0 w-max max-w-full flex-1 flex-col items-start sm:max-w-5xl">
+        <div className="flex flex-1 flex-col justify-center">
           <img
             src="/images/logo3.png"
             alt="Studio Betonika"
@@ -31,23 +31,19 @@ export default function Home() {
               className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
               aria-label="Site pages"
             >
-            <Link href="/dvor/press" className={pageLinkClass}>
-              Press Kit
-            </Link>
-            <span className="text-logo-grid" aria-hidden="true">
-              |
-            </span>
-            <Link href="/dvor/privacy-policy" className={pageLinkClass}>
-              Privacy Policy
-            </Link>
+              <Link href="/dvor/press" className={pageLinkClass}>
+                Press Kit
+              </Link>
+              <span className="text-logo-grid" aria-hidden="true">
+                |
+              </span>
+              <Link href="/dvor/privacy-policy" className={pageLinkClass}>
+                Privacy Policy
+              </Link>
             </nav>
           </div>
         </div>
-      </div>
-      <div className="flex w-full justify-center">
-        <div className="flex w-fit max-w-full min-w-0 flex-col items-start">
-          <SiteFooter variant="home" />
-        </div>
+        <SiteFooter variant="home" />
       </div>
     </main>
   );
