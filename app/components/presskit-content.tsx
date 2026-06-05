@@ -13,15 +13,12 @@ export function PressKitContent() {
           Alex Almeida, a husband and wife based in London.
         </p>
         <p>
-          Angelina Severino is an award-winning Brand and Product Design Leader
-          with two decades of experience across global advertising and
-          technology. Art Director at TBWA, DDB and Starcom, leading campaigns
-          for Coca-Cola, Mastercard and Volkswagen. Design Lead at Gamgee and
-          Lebara. Keynote speaker across design and technology. Global Talent visa
-          holder recognised for Exceptional Talent in Digital Technology by Tech
-          Nation. She is also the artist behind Posteress, a poster art studio
-          featured in Grafik Editions and People of Print, with an apparel
-          collaboration for Zara Man.{" "}
+          Angelina Severino is a visual artist and award-winning designer — Cannes
+          Lions, Global Talent visa holder, keynote speaker across design and
+          technology. Her art project Posteress, a minimalist poster studio
+          featured in Grafik Editions and People of Print, sits at the heart of
+          what she brings to Dvor: typography and architecture treated as art
+          forms in their own right.{" "}
           <a
             href="https://angelinaseverino.com"
             className={linkClass}
@@ -73,9 +70,8 @@ export function PressKitContent() {
           The world of Dvor is Soviet brutalist architecture. Seven atmosphere
           states evolve as you play — from a sunny afternoon through first snow,
           heavy snowfall, blizzard, and whiteout — culminating in a gold
-          transformation that has to be earned. Angelina Severino&apos;s design
-          gives the game a visual identity unlike anything else in the genre.
-          The 16:9 layout turns the problem of a portrait game into an artistic
+          transformation that has to be earned. Posteress gives the game a visual
+          identity unlike anything else in the genre. The 16:9 layout turns the problem of a portrait game into an artistic
           statement — the space around the board is part of the design.
         </p>
         <p>
@@ -85,10 +81,18 @@ export function PressKitContent() {
         </p>
         <p>
           Dvor introduces Panelka. A new scoring moment named after the Soviet
-          prefabricated apartment blocks the pieces are made from. Build a solid
-          wall — nine columns full, one tunnel open — reach the height of a
-          building, and the game rewards you. Break it. Rebuild it. Earn it
-          again.
+          prefabricated apartment blocks the pieces are made from. The pieces in
+          Dvor are called concretes — each one a slab of the building, falling
+          into place. Build a solid wall — nine columns full, one tunnel open —
+          reach the height of a building, and the game rewards you. Break it.
+          Rebuild it. Earn it again.
+        </p>
+        <p>
+          As each concrete locks into place, it transforms. The falling slab
+          becomes part of the facade — a window, a balcony, a stained panel.
+          Seven different buildings, one per atmosphere state, designed by
+          Posteress. The board is not a playing field. It is a construction
+          site. You are building the panelka from the ground up.
         </p>
         <p>
           No advertisements. No in-app purchases. No leaderboard. No daily
