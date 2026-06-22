@@ -12,7 +12,7 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Studio Betonika</h2>
         <p>
           Studio Betonika is an independent game studio founded by Angelina and
-          Alex Severino, a husband and wife based in London.
+          Alex Severino, a wife and husband based in London.
         </p>
         <p>
           Angelina Severino is an award-winning Brand and Product Design Leader
