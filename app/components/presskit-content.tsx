@@ -3,6 +3,8 @@ const sectionHeading =
 
 const linkClass = "text-logo-accent transition-colors hover:text-white";
 
+const boldInline = "font-bold text-white/80";
+
 export function PressKitContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
@@ -57,56 +59,42 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>
           Dvor — The space between the blocks
         </h2>
+        <p>Dvor is a falling block game in two parts.</p>
         <p>
-          Dvor is a falling block game designed for people who want to feel
-          something.
-        </p>
-        <p>
-          It is built on NES-authentic mechanics — the same scoring, speed
-          curves, and rules the genre was born with. But for the first time, it
-          is beautiful. The version Tetris always deserved.
-        </p>
-        <p>
-          The world of Dvor is Soviet brutalist architecture. Seven atmosphere
-          states evolve as you play — from a sunny afternoon through first snow,
-          heavy snowfall, blizzard, and whiteout — culminating in a gold
-          transformation that has to be earned. Posteress gives the game a visual
-          identity unlike anything else in the genre. The 16:9 layout turns the problem of a portrait game into an artistic
+          <span className={boldInline}>Panelka</span> is the prime experience —
+          designed for people who want to feel something. Built on NES-authentic
+          mechanics. The pieces are called concretes — slabs of a Soviet
+          prefabricated apartment block, falling into place. As each one locks,
+          it reveals part of the facade: a window, a balcony, a stained panel.
+          Posteress gives the game a visual identity unlike anything else in the
+          genre. The 16:9 layout turns a portrait game into an artistic
           statement — the space around the board is part of the design.
         </p>
         <p>
-          The soundtrack is original, composed and produced by Alex Almeida. It
-          evolves dynamically as the atmosphere shifts. By the time the gold
-          state arrives, the music has changed completely.
+          In Panelka mode, rows do not clear. You build. The facade reveals
+          itself piece by piece. When the building reaches row 16, the game
+          rewards you — the stars come out, the board clears, and the speed
+          climbs. If a mistake leaves a hole, the game responds precisely: lines
+          clear above it, exposing the gap so you can fill it from below.
         </p>
         <p>
-          Dvor introduces Panelka. A new scoring moment named after the Soviet
-          prefabricated apartment blocks the pieces are made from. The pieces in
-          Dvor are called concretes — each one a slab of the building, falling
-          into place. Build a solid wall — nine columns full, one tunnel open —
-          reach the height of a building, and the game rewards you. Break it.
-          Rebuild it. Earn it again.
+          Five atmosphere states evolve as you play — from the warmth of spring
+          through the urgency of autumn and the cold drive of winter —
+          culminating in a gold transformation that has to be earned. The
+          soundtrack evolves with the atmosphere. By the time gold arrives, the
+          music has changed completely. Composed and produced by Betonika.
         </p>
         <p>
-          As each concrete locks into place, it transforms. The falling slab
-          becomes part of the facade — a window, a balcony, a stained panel.
-          Seven different buildings, one per atmosphere state, designed by
-          Posteress. The board is not a playing field. It is a construction
-          site. You are building the panelka from the ground up.
+          <span className={boldInline}>Lines</span> is the competitive branch —
+          three modes for players who want records and rankings. Olympics is a
+          marathon: slow to fast. 40 Lines is a time trial against the clock.
+          Daily Challenge resets globally every 24 hours and feeds a worldwide
+          leaderboard.
         </p>
         <p>
-          No advertisements. No in-app purchases. No leaderboard. No daily
-          obligations. No online requirement. One price.
-        </p>
-        <p>
-          You choose your starting level — one per atmosphere state, from the
-          quiet of a sunny afternoon to the edge of a storm. You play. The world
-          builds around you. If you survive long enough it turns gold, and the
-          speed keeps climbing until it is over.
-        </p>
-        <p>
-          Your high score is the only thing that persists. It is enough. It has
-          always been enough.
+          Panelka has no advertisements, no in-app purchases, no daily
+          obligations. One price. Both modes feed a global leaderboard — Panelka
+          high scores and Lines records tracked across all platforms.
         </p>
       </section>
 
@@ -114,33 +102,41 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Features</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className="font-bold text-white/80">NES-authentic mechanics</span>{" "}
-            — exact scoring, speed curves, and level system.
+            <span className={boldInline}>NES-authentic mechanics</span> — exact
+            scoring, speed curves, and level system.
           </li>
           <li>
-            <span className="font-bold text-white/80">Panelka</span> — a new
-            scoring mechanic unique to Dvor, named after the architecture the
-            pieces are built from.
+            <span className={boldInline}>Panelka mode</span> — build the full
+            facade, no line clearing, trigger Panelka at row 16.
           </li>
           <li>
-            <span className="font-bold text-white/80">Seven atmosphere states</span>{" "}
-            — the world transforms as you play.
+            <span className={boldInline}>Lines mode</span> — Olympics (marathon),
+            40 Lines (time trial), Daily Challenge (global leaderboard).
           </li>
           <li>
-            <span className="font-bold text-white/80">Level selector 1–7</span> —
-            choose your starting atmosphere.
+            <span className={boldInline}>Five atmosphere states</span> — Spring,
+            Summer, Autumn, Winter, Gold.
           </li>
           <li>
-            <span className="font-bold text-white/80">Tunable DAS/ARR</span> —
-            presets for Modern, Competitive, and NES Authentic.
+            <span className={boldInline}>Facade reveal</span> — as pieces lock,
+            the building comes to life.
           </li>
           <li>
-            <span className="font-bold text-white/80">Original soundtrack</span> —
-            composed by Alex Almeida, dynamically evolving.
+            <span className={boldInline}>Season selector</span> — choose your
+            starting atmosphere (Spring, Summer, Autumn, Winter).
           </li>
           <li>
-            <span className="font-bold text-white/80">Pure experience</span> — No
-            advertisements. No in-app purchases. No leaderboard. One price.
+            <span className={boldInline}>Tunable DAS/ARR</span> — presets for
+            Modern, Competitive, and NES Authentic, with a Custom mode that
+            enables fine-control sliders.
+          </li>
+          <li>
+            <span className={boldInline}>Original soundtrack by Betonika</span> —
+            evolves dynamically through all five atmosphere states.
+          </li>
+          <li>
+            <span className={boldInline}>Global leaderboard</span> — Panelka high
+            scores and Lines records tracked across all platforms.
           </li>
         </ul>
       </section>
@@ -149,41 +145,38 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Key Facts</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className="font-bold text-white/80">Game:</span> Dvor
+            <span className={boldInline}>Game:</span> Dvor
           </li>
           <li>
-            <span className="font-bold text-white/80">Developer:</span> Studio
-            Betonika (Art Britannia Ltd)
+            <span className={boldInline}>Developer:</span> Studio Betonika (Art
+            Britannia Ltd)
           </li>
           <li>
-            <span className="font-bold text-white/80">Genre:</span> Falling block
-            puzzle
+            <span className={boldInline}>Genre:</span> Falling block puzzle
           </li>
           <li>
-            <span className="font-bold text-white/80">Steam:</span> September 2026
+            <span className={boldInline}>Steam:</span> September 2026
           </li>
           <li>
-            <span className="font-bold text-white/80">Xbox & PS5:</span> December
-            2026
+            <span className={boldInline}>Xbox & PS5:</span> December 2026
           </li>
           <li>
-            <span className="font-bold text-white/80">Nintendo Switch:</span>{" "}
-            January 2027
+            <span className={boldInline}>Nintendo Switch:</span> January 2027
           </li>
           <li>
-            <span className="font-bold text-white/80">Mobile:</span> TBC
+            <span className={boldInline}>Mobile:</span> TBC
           </li>
           <li>
-            <span className="font-bold text-white/80">Price:</span> £6.99–£7.99
+            <span className={boldInline}>Price:</span> £6.99–£7.99
           </li>
           <li>
-            <span className="font-bold text-white/80">Website:</span>{" "}
+            <span className={boldInline}>Website:</span>{" "}
             <a href="https://studiobetonika.com" className={linkClass}>
               studiobetonika.com
             </a>
           </li>
           <li>
-            <span className="font-bold text-white/80">Press contact:</span>{" "}
+            <span className={boldInline}>Press contact:</span>{" "}
             <a href="mailto:hello@studiobetonika.com" className={linkClass}>
               hello@studiobetonika.com
             </a>
@@ -195,13 +188,13 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Press & Legal</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className="font-bold text-white/80">Press kit:</span>{" "}
+            <span className={boldInline}>Press kit:</span>{" "}
             <a href="/dvor/press" className={linkClass}>
               studiobetonika.com/dvor/press
             </a>
           </li>
           <li>
-            <span className="font-bold text-white/80">Privacy policy:</span>{" "}
+            <span className={boldInline}>Privacy policy:</span>{" "}
             <a href="/dvor/privacy-policy" className={linkClass}>
               studiobetonika.com/dvor/privacy-policy
             </a>
@@ -213,8 +206,8 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Screenshots & Trailer</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className="font-bold text-white/80">Visual assets:</span>{" "}
-            60-second gameplay trailer and screenshots available at{" "}
+            <span className={boldInline}>Visual assets:</span> 60-second
+            gameplay trailer and screenshots available at{" "}
             <a href="/dvor/press" className={linkClass}>
               studiobetonika.com/dvor/press
             </a>{" "}
@@ -227,13 +220,12 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Soundtrack</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className="font-bold text-white/80">Audio:</span> Composed and
-            produced by Alex Almeida.
+            <span className={boldInline}>Audio:</span> Composed and produced by
+            Betonika.
           </li>
           <li>
-            <span className="font-bold text-white/80">Availability:</span>{" "}
-            Available on Bandcamp and all streaming platforms from September
-            2026.
+            <span className={boldInline}>Availability:</span> Available on
+            Bandcamp and all streaming platforms from September 2026.
           </li>
         </ul>
       </section>
@@ -242,18 +234,17 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Contact</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className="font-bold text-white/80">Email:</span>{" "}
+            <span className={boldInline}>Email:</span>{" "}
             <a href="mailto:hello@studiobetonika.com" className={linkClass}>
               hello@studiobetonika.com
             </a>
           </li>
           <li>
-            <span className="font-bold text-white/80">Company:</span> Art
-            Britannia Ltd, trading as Studio Betonika
+            <span className={boldInline}>Company:</span> Art Britannia Ltd,
+            trading as Studio Betonika
           </li>
           <li>
-            <span className="font-bold text-white/80">Location:</span> London,
-            United Kingdom
+            <span className={boldInline}>Location:</span> London, United Kingdom
           </li>
         </ul>
       </section>
