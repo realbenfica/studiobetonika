@@ -249,9 +249,7 @@ export function PressKitContent() {
         </ul>
       </section>
 
-      <p className="pt-2 text-white/50 italic">
-        Studio Betonika — Last updated: June 2026
-      </p>
+      <p className="pt-2 text-white/50 italic">Last updated: June 2026</p>
     </div>
   );
 }

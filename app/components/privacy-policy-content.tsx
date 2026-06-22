@@ -8,8 +8,6 @@ const boldInline = "font-bold text-white/80";
 export function PrivacyPolicyContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
-      <p className="text-white/50 italic">Last updated: June 2026</p>
-
       <section className="space-y-4">
         <h2 className={sectionHeading}>Studio Betonika</h2>
         <p>
@@ -256,6 +254,8 @@ export function PrivacyPolicyContent() {
           </li>
         </ul>
       </section>
+
+      <p className="pt-2 text-white/50 italic">Last updated: June 2026</p>
     </div>
   );
 }
