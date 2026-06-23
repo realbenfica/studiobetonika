@@ -63,8 +63,8 @@ export function PrivacyPolicyContent() {
           </p>
           <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
             <li>
-              Your display name (Steam username on PC; platform gamer tag on
-              console)
+              Your display name (Steam username on Windows and macOS; platform
+              gamer tag on console)
             </li>
             <li>Your score or time</li>
             <li>
@@ -93,11 +93,11 @@ export function PrivacyPolicyContent() {
         </div>
 
         <div className="space-y-4">
-          <h3 className={subHeading}>2c. Steam (PC)</h3>
+          <h3 className={subHeading}>2c. Steam (Windows and macOS)</h3>
           <p>
-            On PC, Dvor is distributed via Steam (Valve Corporation). Steam may
-            collect usage and analytics data in accordance with its own privacy
-            policy:{" "}
+            On Windows and macOS, Dvor is distributed via Steam (Valve
+            Corporation). Steam may collect usage and analytics data in
+            accordance with its own privacy policy:{" "}
             <a
               href="https://store.steampowered.com/privacy_agreement"
               className={linkClass}
@@ -116,10 +116,10 @@ export function PrivacyPolicyContent() {
         <div className="space-y-4">
           <h3 className={subHeading}>2d. Console platforms</h3>
           <p>
-            On Xbox and PlayStation, your platform&apos;s own privacy policy
-            applies in addition to this one. We receive only the data your
-            platform permits us to access (typically your gamer tag, if you submit
-            a leaderboard score).
+            On Nintendo Switch, Xbox, and PlayStation, your platform&apos;s own
+            privacy policy applies in addition to this one. We receive only the
+            data your platform permits us to access (typically your gamer tag, if
+            you submit a leaderboard score).
           </p>
         </div>
       </section>
@@ -246,7 +246,7 @@ export function PrivacyPolicyContent() {
             <tbody className="text-white/70">
               <tr className="border-b border-white/10">
                 <td className="px-3 py-2">Steam</td>
-                <td className="px-3 py-2">PC distribution</td>
+                <td className="px-3 py-2">Windows and macOS distribution</td>
                 <td className="px-3 py-2">Valve Corporation</td>
                 <td className="px-3 py-2">
                   <a
@@ -271,6 +271,23 @@ export function PrivacyPolicyContent() {
                     rel="noopener noreferrer"
                   >
                     policies.google.com/privacy
+                  </a>
+                </td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-3 py-2">Nintendo Switch</td>
+                <td className="px-3 py-2">
+                  Console distribution (from Jan 2027)
+                </td>
+                <td className="px-3 py-2">Nintendo Co., Ltd.</td>
+                <td className="px-3 py-2">
+                  <a
+                    href="https://www.nintendo.co.uk/legal/privacy-policy"
+                    className={linkClass}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    nintendo.co.uk/legal/privacy-policy
                   </a>
                 </td>
               </tr>
