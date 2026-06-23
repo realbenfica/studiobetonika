@@ -173,7 +173,7 @@ export function PrivacyPolicyContent() {
             <span className={boldInline}>Mobile:</span> TBC
           </li>
           <li>
-            <span className={boldInline}>Price:</span> £6.99–£7.99
+            <span className={boldInline}>Price:</span> £7.99
           </li>
           <li>
             <span className={boldInline}>Website:</span>{" "}
