@@ -1,6 +1,8 @@
 const sectionHeading =
   "text-white/90 font-bold uppercase tracking-[0.08em]";
 
+const subHeading = "text-white/80 font-bold tracking-[0.04em]";
+
 const linkClass = "text-logo-accent transition-colors hover:text-white";
 
 const boldInline = "font-bold text-white/80";
@@ -8,254 +10,340 @@ const boldInline = "font-bold text-white/80";
 export function PrivacyPolicyContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
+      <div className="space-y-1 text-white/50">
+        <p className="font-bold text-white/70">
+          Art Britannia Ltd, trading as Studio Betonika
+        </p>
+        <p className="italic">Last updated: June 2026</p>
+      </div>
+
       <section className="space-y-4">
-        <h2 className={sectionHeading}>Studio Betonika</h2>
+        <h2 className={sectionHeading}>1. Who we are</h2>
         <p>
-          Studio Betonika is an independent game studio founded by Angelina and
-          Alex Severino, a wife and husband based in London.
+          Dvor is developed and published by Art Britannia Ltd, trading as Studio
+          Betonika, a company registered in England and Wales (Company No.
+          16631916), based in London, United Kingdom.
         </p>
         <p>
-          Angelina Severino is an award-winning Brand and Product Design Leader
-          with two decades of experience across global advertising and
-          technology. Art Director at TBWA, DDB and Starcom, leading campaigns
-          for Coca-Cola, Mastercard and Volkswagen. Design Lead at Gamgee and
-          Lebara. Keynote speaker across design and technology. Global Talent
-          visa holder recognised for Exceptional Talent in Digital Technology by
-          Tech Nation. She is also the artist behind Posteress, a poster art
-          studio featured in Grafik Editions and People of Print, with an
-          apparel collaboration for Zara Man.{" "}
-          <a
-            href="https://angelinaseverino.com"
-            className={linkClass}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            angelinaseverino.com
-          </a>{" "}
-          —{" "}
-          <a
-            href="https://posteress.com"
-            className={linkClass}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            posteress.com
+          For any privacy-related queries, contact us at:{" "}
+          <a href="mailto:hello@studiobetonika.com" className={linkClass}>
+            hello@studiobetonika.com
           </a>
         </p>
+      </section>
+
+      <section className="space-y-6">
+        <h2 className={sectionHeading}>2. What data we collect and why</h2>
+
+        <div className="space-y-4">
+          <h3 className={subHeading}>2a. Data stored locally on your device</h3>
+          <p>
+            Dvor stores the following data locally using Unity PlayerPrefs on
+            your device:
+          </p>
+          <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+            <li>Your high score and lines cleared</li>
+            <li>Your chosen DAS/ARR settings (input timing preferences)</li>
+            <li>Your audio preference (Music / SFX / Off)</li>
+            <li>Your ghost piece preference (on/off)</li>
+            <li>Your last chosen starting season</li>
+            <li>
+              Your Daily Challenge progress (date-keyed, to prevent replaying the
+              same challenge)
+            </li>
+          </ul>
+          <p>
+            This data never leaves your device unless you submit a leaderboard
+            score (see 2b). We have no access to this data.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className={subHeading}>2b. Leaderboard data (Firebase)</h3>
+          <p>
+            If you submit a score to the global leaderboard, the following data
+            is collected and stored on Google Firebase:
+          </p>
+          <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+            <li>
+              Your display name (Steam username on PC; platform gamer tag on
+              console)
+            </li>
+            <li>Your score or time</li>
+            <li>
+              The game mode (Panelka, Olympics, Sprint, or Daily Challenge)
+            </li>
+            <li>A timestamp</li>
+          </ul>
+          <p>
+            We do not collect your email address, real name, payment information,
+            or any other personal data. Your display name is the only identifier
+            we store, and it is the name you have chosen on your gaming platform.
+          </p>
+          <p>
+            Leaderboard data is stored in the European Union where possible, in
+            accordance with Google Firebase&apos;s data residency options.
+            Firebase is operated by Google LLC. Google&apos;s privacy policy:{" "}
+            <a
+              href="https://policies.google.com/privacy"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              policies.google.com/privacy
+            </a>
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className={subHeading}>2c. Steam (PC)</h3>
+          <p>
+            On PC, Dvor is distributed via Steam (Valve Corporation). Steam may
+            collect usage and analytics data in accordance with its own privacy
+            policy:{" "}
+            <a
+              href="https://store.steampowered.com/privacy_agreement"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              store.steampowered.com/privacy_agreement
+            </a>
+          </p>
+          <p>
+            We do not receive individual user data from Steam beyond what is
+            necessary to verify purchases.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className={subHeading}>2d. Console platforms</h3>
+          <p>
+            On Xbox and PlayStation, your platform&apos;s own privacy policy
+            applies in addition to this one. We receive only the data your
+            platform permits us to access (typically your gamer tag, if you submit
+            a leaderboard score).
+          </p>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>3. Data we do not collect</h2>
+        <p>We do not collect:</p>
+        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+          <li>Your name, email address, or contact details</li>
+          <li>Your location or IP address</li>
+          <li>Device identifiers or advertising IDs</li>
+          <li>Crash reports or telemetry (no analytics SDK is integrated)</li>
+          <li>Any data from players under 13, or under 16 in the EU</li>
+        </ul>
         <p>
-          Their parents belong to the same generation as Alexey Pajitnov, who
-          created Tetris in 1984. Angelina grew up in the Soviet Union and later
-          lived in Minsk. The family is now settled in London with three
-          daughters.
+          Dvor contains no advertising, no in-app purchases, and no account
+          system. We have no way to identify you as an individual unless you
+          submit a leaderboard score.
         </p>
-        <p>
-          Studio Betonika takes its name from brutalist concrete —{" "}
-          <em className="text-white/80 italic">beton</em>, the material, the
-          aesthetic, the world Tetris was born in. Their first game is Dvor. The
-          word means courtyard in Russian. The space between the blocks. The
-          place where Soviet children played.
-        </p>
-        <p>It is their first game. It arrives fully formed.</p>
       </section>
 
       <section className="space-y-4">
         <h2 className={sectionHeading}>
-          Dvor — The space between the blocks
+          4. Legal basis for processing (UK GDPR)
         </h2>
-        <p>Dvor is a falling block game in two parts.</p>
         <p>
-          <span className={boldInline}>Panelka</span> is the prime experience —
-          designed for people who want to feel something. Built on NES-authentic
-          mechanics. The pieces are called concretes — slabs of a Soviet
-          prefabricated apartment block, falling into place. As each one locks,
-          it reveals part of the facade: a window, a balcony, a stained panel.
-          The board is not a playing field. It is a construction site.
+          We are based in the United Kingdom and operate under UK GDPR and the
+          Data Protection Act 2018.
         </p>
-        <p>
-          In Panelka mode, rows do not clear. You build. The facade reveals
-          itself piece by piece. When the building reaches row 16, the game
-          rewards you — the stars come out, the board clears, and the speed
-          climbs. If a mistake leaves a hole, the game responds precisely: lines
-          clear above it, exposing the gap so you can fill it.
-        </p>
-        <p>
-          Five atmosphere states evolve as you play — from the warmth of spring
-          through the urgency of autumn and the cold drive of winter —
-          culminating in a gold transformation that has to be earned. Angelina
-          Severino&apos;s design gives the game a visual identity unlike anything
-          else in the genre. The 16:9 layout turns a portrait game into an
-          artistic statement.
-        </p>
-        <p>
-          The soundtrack evolves with the atmosphere. By the time gold arrives,
-          the music has changed completely. Composed and produced by Betonika.
-        </p>
-        <p>
-          <span className={boldInline}>Lines</span> is the competitive branch —
-          three modes for players who want records and rankings. Olympics is a
-          marathon: slow to fast. 40 Lines is a time trial against the clock.
-          Daily Challenge resets globally every 24 hours and feeds a worldwide
-          leaderboard.
-        </p>
-        <p>
-          Panelka has no advertisements, no in-app purchases, no daily
-          obligations. One price. Both modes feed a global leaderboard — Panelka
-          high scores and Lines records tracked across all platforms.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Features</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className={boldInline}>NES-authentic mechanics</span> — exact
-            scoring, speed curves, and level system.
+            <span className={boldInline}>Local device data (PlayerPrefs):</span>{" "}
+            Legitimate interest — necessary to provide core game functionality
+            (saving your settings and progress).
           </li>
           <li>
-            <span className={boldInline}>Panelka mode</span> — build the full
-            facade, no line clearing, trigger Panelka at row 16.
-          </li>
-          <li>
-            <span className={boldInline}>Lines mode</span> — Olympics (marathon),
-            40 Lines (time trial), Daily Challenge (global leaderboard).
-          </li>
-          <li>
-            <span className={boldInline}>Five atmosphere states</span> — Spring,
-            Summer, Autumn, Winter, Gold.
-          </li>
-          <li>
-            <span className={boldInline}>Facade reveal</span> — as pieces lock,
-            the building comes to life.
-          </li>
-          <li>
-            <span className={boldInline}>Season selector</span> — choose your
-            starting atmosphere (Spring, Summer, Autumn, Winter).
-          </li>
-          <li>
-            <span className={boldInline}>Tunable DAS/ARR</span> — presets for
-            Modern, Competitive, and NES Authentic, with a Custom mode that
-            enables fine-control sliders.
-          </li>
-          <li>
-            <span className={boldInline}>Original soundtrack by Betonika</span> —
-            evolves dynamically through all five atmosphere states.
-          </li>
-          <li>
-            <span className={boldInline}>Global leaderboard</span> — Panelka high
-            scores and Lines records tracked across all platforms.
+            <span className={boldInline}>Leaderboard data (Firebase):</span>{" "}
+            Consent — by choosing to submit a score to the leaderboard, you
+            consent to your display name and score being stored and displayed
+            publicly.
           </li>
         </ul>
       </section>
 
       <section className="space-y-4">
-        <h2 className={sectionHeading}>Key Facts</h2>
+        <h2 className={sectionHeading}>5. Data retention</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className={boldInline}>Game:</span> Dvor
+            <span className={boldInline}>Local device data:</span> Retained on
+            your device until you uninstall the game or clear application data.
           </li>
           <li>
-            <span className={boldInline}>Developer:</span> Studio Betonika (Art
-            Britannia Ltd)
-          </li>
-          <li>
-            <span className={boldInline}>Genre:</span> Falling block puzzle
-          </li>
-          <li>
-            <span className={boldInline}>Steam:</span> September 2026
-          </li>
-          <li>
-            <span className={boldInline}>Xbox & PS5:</span> December 2026
-          </li>
-          <li>
-            <span className={boldInline}>Nintendo Switch:</span> January 2027
-          </li>
-          <li>
-            <span className={boldInline}>Mobile:</span> TBC
-          </li>
-          <li>
-            <span className={boldInline}>Price:</span> £7.99
-          </li>
-          <li>
-            <span className={boldInline}>Website:</span>{" "}
-            <a href="https://studiobetonika.com" className={linkClass}>
-              studiobetonika.com
-            </a>
-          </li>
-          <li>
-            <span className={boldInline}>Press contact:</span>{" "}
+            <span className={boldInline}>Leaderboard data:</span> Retained
+            indefinitely to maintain leaderboard integrity. To request removal
+            of your leaderboard entry, contact{" "}
             <a href="mailto:hello@studiobetonika.com" className={linkClass}>
               hello@studiobetonika.com
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Press & Legal</h2>
-        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
-          <li>
-            <span className={boldInline}>Press kit:</span>{" "}
-            <a href="/dvor/press" className={linkClass}>
-              studiobetonika.com/press
-            </a>
-          </li>
-          <li>
-            <span className={boldInline}>Privacy policy:</span>{" "}
-            <a href="/dvor/privacy-policy" className={linkClass}>
-              studiobetonika.com/privacy
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Screenshots & Trailer</h2>
-        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
-          <li>
-            <span className={boldInline}>Visual assets:</span> 60-second
-            gameplay trailer and screenshots available at{" "}
-            <a href="/dvor/press" className={linkClass}>
-              studiobetonika.com/press
             </a>{" "}
-            before launch.
+            with your display name and platform. We will action the request within
+            30 days.
           </li>
         </ul>
       </section>
 
       <section className="space-y-4">
-        <h2 className={sectionHeading}>Soundtrack</h2>
+        <h2 className={sectionHeading}>6. Your rights</h2>
+        <p>Under UK GDPR, you have the right to:</p>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+          <li>Access the data we hold about you</li>
+          <li>Request correction of inaccurate data</li>
+          <li>Request deletion of your data</li>
+          <li>Object to processing</li>
           <li>
-            <span className={boldInline}>Audio:</span> Composed and produced by
-            Betonika.
-          </li>
-          <li>
-            <span className={boldInline}>Availability:</span> Available on
-            Bandcamp and all streaming platforms from September 2026.
-          </li>
-        </ul>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className={sectionHeading}>Contact</h2>
-        <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
-          <li>
-            <span className={boldInline}>Email:</span>{" "}
-            <a href="mailto:hello@studiobetonika.com" className={linkClass}>
-              hello@studiobetonika.com
+            Lodge a complaint with the Information Commissioner&apos;s Office
+            (ICO) at{" "}
+            <a
+              href="https://ico.org.uk"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ico.org.uk
             </a>
           </li>
-          <li>
-            <span className={boldInline}>Company:</span> Art Britannia Ltd,
-            trading as Studio Betonika
-          </li>
-          <li>
-            <span className={boldInline}>Location:</span> London, United Kingdom
-          </li>
         </ul>
+        <p>
+          To exercise any of these rights, contact:{" "}
+          <a href="mailto:hello@studiobetonika.com" className={linkClass}>
+            hello@studiobetonika.com
+          </a>
+        </p>
       </section>
 
-      <p className="pt-2 text-white/50 italic">Last updated: June 2026</p>
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>7. Children</h2>
+        <p>
+          Dvor is rated suitable for all ages on the platforms where it is
+          available. We do not knowingly collect personal data from children
+          under 13 (or under 16 in the EU). The only data we collect via
+          Firebase is a leaderboard display name chosen by the player. If you
+          believe a child has submitted data to our leaderboard and you wish to
+          have it removed, contact{" "}
+          <a href="mailto:hello@studiobetonika.com" className={linkClass}>
+            hello@studiobetonika.com
+          </a>
+          .
+        </p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>8. Third-party services</h2>
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[36rem] border-collapse text-left text-[clamp(0.8125rem,2.5vw,0.9375rem)]">
+            <thead>
+              <tr className="border-b border-white/20">
+                <th className="px-3 py-2 font-bold text-white/80">Service</th>
+                <th className="px-3 py-2 font-bold text-white/80">Purpose</th>
+                <th className="px-3 py-2 font-bold text-white/80">Provider</th>
+                <th className="px-3 py-2 font-bold text-white/80">
+                  Privacy policy
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-3 py-2">Steam</td>
+                <td className="px-3 py-2">PC distribution</td>
+                <td className="px-3 py-2">Valve Corporation</td>
+                <td className="px-3 py-2">
+                  <a
+                    href="https://store.steampowered.com/privacy_agreement"
+                    className={linkClass}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    store.steampowered.com/privacy_agreement
+                  </a>
+                </td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-3 py-2">Google Firebase</td>
+                <td className="px-3 py-2">Leaderboard storage</td>
+                <td className="px-3 py-2">Google LLC</td>
+                <td className="px-3 py-2">
+                  <a
+                    href="https://policies.google.com/privacy"
+                    className={linkClass}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    policies.google.com/privacy
+                  </a>
+                </td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-3 py-2">Xbox</td>
+                <td className="px-3 py-2">
+                  Console distribution (from Dec 2026)
+                </td>
+                <td className="px-3 py-2">Microsoft</td>
+                <td className="px-3 py-2">
+                  <a
+                    href="https://privacy.microsoft.com"
+                    className={linkClass}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    privacy.microsoft.com
+                  </a>
+                </td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-3 py-2">PlayStation</td>
+                <td className="px-3 py-2">
+                  Console distribution (from Dec 2026)
+                </td>
+                <td className="px-3 py-2">Sony Interactive Entertainment</td>
+                <td className="px-3 py-2">
+                  <a
+                    href="https://www.playstation.com/en-gb/legal/privacy-policy"
+                    className={linkClass}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    playstation.com/en-gb/legal/privacy-policy
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>9. Changes to this policy</h2>
+        <p>
+          We may update this policy as the game&apos;s features evolve — for
+          example, when console versions launch. The latest version will always
+          be available at{" "}
+          <a href="/dvor/privacy-policy" className={linkClass}>
+            studiobetonika.com/dvor/privacy-policy
+          </a>
+          . The date at the top of this document reflects the most recent update.
+          Significant changes will be noted in game update release notes.
+        </p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>10. Contact</h2>
+        <p>
+          Art Britannia Ltd, trading as Studio Betonika
+          <br />
+          <a href="mailto:hello@studiobetonika.com" className={linkClass}>
+            hello@studiobetonika.com
+          </a>
+          <br />
+          London, United Kingdom
+          <br />
+          Company No. 16631916
+        </p>
+      </section>
     </div>
   );
 }
