@@ -248,8 +248,6 @@ export function PressKitContent() {
           </li>
         </ul>
       </section>
-
-      <p className="pt-2 text-white/50 italic">Last updated: June 2026</p>
     </div>
   );
 }
