@@ -11,9 +11,6 @@ export function PrivacyPolicyContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
       <div className="space-y-1 text-white/50">
-        <p className="font-bold text-white/70">
-          Art Britannia Ltd, trading as Studio Betonika
-        </p>
         <p className="italic">Last updated: June 2026</p>
       </div>
 
