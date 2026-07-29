@@ -155,7 +155,16 @@ export function PressKitContent() {
             <span className={boldInline}>Genre:</span> Falling block puzzle
           </li>
           <li>
-            <span className={boldInline}>Steam:</span> September 2026
+            <span className={boldInline}>Steam:</span>{" "}
+            <a
+              href="https://store.steampowered.com/app/4881830/Dvor/"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              1 September 2026
+            </a>{" "}
+            — Mac &amp; PC
           </li>
           <li>
             <span className={boldInline}>Xbox & PS5:</span> December 2026
@@ -187,6 +196,17 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>Press & Legal</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+          <li>
+            <span className={boldInline}>Steam:</span>{" "}
+            <a
+              href="https://store.steampowered.com/app/4881830/Dvor/"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              store.steampowered.com/app/4881830/Dvor
+            </a>
+          </li>
           <li>
             <span className={boldInline}>Press kit:</span>{" "}
             <a href="/dvor/press" className={linkClass}>

@@ -24,7 +24,18 @@ export default function Home() {
             <p className="mb-0 text-left font-bold text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
               <span className="inline-flex flex-wrap items-center gap-x-2">
                 <DvorLogo />
-                coming Autumn 2026
+                out 1 September 2026
+              </span>
+              <br />
+              <span className="font-normal">Mac &amp; PC on{" "}
+                <a
+                  href="https://store.steampowered.com/app/4881830/Dvor/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-logo-grid transition-colors hover:text-logo-accent"
+                >
+                  Steam
+                </a>
               </span>
             </p>
             <nav
