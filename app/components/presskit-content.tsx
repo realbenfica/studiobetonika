@@ -208,6 +208,18 @@ export function PressKitContent() {
             </a>
           </li>
           <li>
+            <span className={boldInline}>Soundtrack:</span>{" "}
+            <a
+              href="https://ditto.fm/dvor"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ditto.fm/dvor
+            </a>{" "}
+            — all major streaming platforms
+          </li>
+          <li>
             <span className={boldInline}>Press kit:</span>{" "}
             <a href="/dvor/press" className={linkClass}>
               studiobetonika.com/dvor/press
@@ -244,8 +256,16 @@ export function PressKitContent() {
             Betonika.
           </li>
           <li>
-            <span className={boldInline}>Availability:</span> Available on
-            Bandcamp and all streaming platforms from September 2026.
+            <span className={boldInline}>Availability:</span>{" "}
+            <a
+              href="https://ditto.fm/dvor"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ditto.fm/dvor
+            </a>{" "}
+            — Bandcamp and all major streaming platforms from September 2026.
           </li>
         </ul>
       </section>

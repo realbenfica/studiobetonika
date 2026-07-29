@@ -37,6 +37,17 @@ export default function Home() {
                   Steam
                 </a>
               </span>
+              <br />
+              <span className="font-normal">
+                <a
+                  href="https://ditto.fm/dvor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-logo-grid transition-colors hover:text-logo-accent"
+                >
+                  Listen to the soundtrack
+                </a>
+              </span>
             </p>
             <nav
               className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
