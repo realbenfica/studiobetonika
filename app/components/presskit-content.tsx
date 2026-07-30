@@ -265,7 +265,7 @@ export function PressKitContent() {
             >
               ditto.fm/dvor
             </a>{" "}
-            — Bandcamp and all major streaming platforms from September 2026.
+            — Bandcamp and all major streaming platforms from July 2026.
           </li>
         </ul>
       </section>
