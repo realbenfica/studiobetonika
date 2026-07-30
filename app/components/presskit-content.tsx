@@ -85,7 +85,7 @@ export function PressKitContent() {
           music has changed completely. Composed and produced by Betonika.
         </p>
         <p>
-          <span className={boldInline}>Stroika</span> is the competitive branch —
+          <span className={boldInline}>Stroyka</span> is the competitive branch —
           three modes for players who want records and rankings. Olympics is a
           marathon: slow to fast. Sprint is a time trial against the clock.
           Daily Challenge resets globally every 24 hours and feeds a worldwide
@@ -94,7 +94,7 @@ export function PressKitContent() {
         <p>
           Panelka has no advertisements, no in-app purchases, no daily
           obligations. One price. Both modes feed a global leaderboard — Panelka
-          high scores and Stroika records tracked across all platforms.
+          high scores and Stroyka records tracked across all platforms.
         </p>
       </section>
 
@@ -110,7 +110,7 @@ export function PressKitContent() {
             facade, no line clearing, trigger Panelka at row 16.
           </li>
           <li>
-            <span className={boldInline}>Stroika mode</span> — Olympics (marathon),
+            <span className={boldInline}>Stroyka mode</span> — Olympics (marathon),
             Sprint (time trial), Daily Challenge (global leaderboard).
           </li>
           <li>
@@ -136,7 +136,7 @@ export function PressKitContent() {
           </li>
           <li>
             <span className={boldInline}>Global leaderboard</span> — Panelka high
-            scores and Stroika records tracked across all platforms.
+            scores and Stroyka records tracked across all platforms.
           </li>
         </ul>
       </section>
