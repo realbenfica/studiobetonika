@@ -8,20 +8,20 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const gosha = localFont({
+const alex = localFont({
   src: [
     {
-      path: "../public/fonts/PPGoshaSans-Regular.otf",
+      path: "../public/fonts/PPAlex-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/PPGoshaSans-Bold.otf",
+      path: "../public/fonts/PPAlex-Bold.otf",
       weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-gosha",
+  variable: "--font-alex",
   display: "swap",
 });
 
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${gosha.variable} h-full w-full overflow-x-hidden bg-[#1a1a1a] font-sans antialiased`}
+      className={`${alex.variable} h-full w-full overflow-x-hidden bg-[#1a1a1a] font-sans antialiased`}
     >
       <body className="flex min-h-full w-full flex-col overflow-x-hidden bg-[#1a1a1a] font-sans">
         <GoogleAnalytics />
