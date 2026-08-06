@@ -220,6 +220,17 @@ export function PressKitContent() {
             — all major streaming platforms
           </li>
           <li>
+            <span className={boldInline}>Trailer:</span>{" "}
+            <a
+              href="https://youtu.be/-ZWJ22-pYI0"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              youtu.be/-ZWJ22-pYI0
+            </a>
+          </li>
+          <li>
             <span className={boldInline}>Press kit:</span>{" "}
             <a href="/dvor/press" className={linkClass}>
               studiobetonika.com/dvor/press
@@ -238,8 +249,19 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Screenshots & Trailer</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className={boldInline}>Visual assets:</span> 60-second
-            gameplay trailer and screenshots available at{" "}
+            <span className={boldInline}>Trailer:</span>{" "}
+            <a
+              href="https://youtu.be/-ZWJ22-pYI0"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              youtu.be/-ZWJ22-pYI0
+            </a>
+          </li>
+          <li>
+            <span className={boldInline}>Visual assets:</span> Screenshots
+            available at{" "}
             <a href="/dvor/press" className={linkClass}>
               studiobetonika.com/dvor/press
             </a>{" "}
