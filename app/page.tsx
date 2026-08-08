@@ -15,13 +15,13 @@ export default function Home() {
             alt="Studio Betonika"
             className="h-auto max-h-[8.75rem] w-auto max-w-[calc((100vw-4rem)/2)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
           />
-          <p className="mt-8 text-left font-normal text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
+          <p className="mt-4 text-left font-normal text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
             Brutalist games.
             <br />
             Beautiful worlds.
           </p>
-          <div className="mt-16 space-y-4">
-            <div className="w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
+          <div className="mt-16">
+            <div className="mb-4 w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
               <div className="relative aspect-video w-full overflow-hidden bg-black">
                 <iframe
                   className="absolute inset-0 h-full w-full"
@@ -62,7 +62,7 @@ export default function Home() {
               </span>
             </p>
             <nav
-              className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
+              className="mt-4 flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
               aria-label="Site pages"
             >
               <Link href="/dvor/press" className={pageLinkClass}>
