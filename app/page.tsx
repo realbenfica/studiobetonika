@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex min-h-0 w-max max-w-full flex-1 flex-col items-start sm:max-w-5xl">
         <div className="flex flex-1 flex-col justify-center">
           <img
-            src="/images/logo3.png"
+            src="/images/logo4.png"
             alt="Studio Betonika"
             className="h-auto max-h-[17.5rem] w-auto max-w-[calc(100vw-4rem)] object-contain object-left sm:max-h-[20rem] sm:max-w-5xl"
           />
