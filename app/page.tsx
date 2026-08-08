@@ -8,19 +8,22 @@ const pageLinkClass =
 export default function Home() {
   return (
     <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col items-center overflow-x-clip bg-[#1a1a1a] px-8 py-8 sm:px-4">
-      <div className="flex min-h-0 w-max max-w-full flex-1 flex-col items-start sm:max-w-5xl">
-        <div className="flex flex-1 flex-col justify-center">
-          <img
-            src="/images/logo4.png"
-            alt="Studio Betonika"
-            className="h-auto max-h-[8.75rem] w-auto max-w-[calc((100vw-4rem)/2)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
-          />
-          <p className="mt-4 text-left font-normal text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
-            Brutalist games.
-            <br />
-            Beautiful worlds.
-          </p>
-          <div className="mt-16">
+      <div className="flex min-h-0 w-full max-w-full flex-1 flex-col sm:w-max sm:max-w-5xl">
+        <div className="flex min-h-0 flex-1 flex-col sm:justify-center">
+          <div className="shrink-0 self-start">
+            <img
+              src="/images/logo4.png"
+              alt="Studio Betonika"
+              className="h-auto max-h-[8.75rem] w-auto max-w-[calc((100vw-4rem)/2)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
+            />
+            <p className="mt-4 text-left font-normal text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
+              Brutalist games.
+              <br />
+              Beautiful worlds.
+            </p>
+          </div>
+
+          <div className="mt-8 flex min-h-0 flex-1 flex-col items-start justify-center self-stretch text-left sm:mt-16 sm:flex-none sm:justify-start sm:self-start">
             <div className="mb-4 w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
               <div className="relative aspect-video w-full overflow-hidden bg-black">
                 <iframe
@@ -77,7 +80,8 @@ export default function Home() {
             </nav>
           </div>
         </div>
-        <SiteFooter variant="home" />
+
+        <SiteFooter variant="home" className="mt-8 shrink-0 self-start sm:mt-0" />
       </div>
     </main>
   );
