@@ -21,6 +21,18 @@ export default function Home() {
             Beautiful worlds.
           </p>
           <div className="mt-16 space-y-4">
+            <div className="w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
+              <div className="relative aspect-video w-full overflow-hidden bg-black">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src="https://www.youtube.com/embed/-ZWJ22-pYI0"
+                  title="Dvor trailer"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
             <p className="mb-0 text-left font-bold text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
               <span className="inline-flex flex-wrap items-center gap-x-2">
                 <DvorLogo />
@@ -49,18 +61,6 @@ export default function Home() {
                 </a>
               </span>
             </p>
-            <div className="mt-8 w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
-              <div className="relative aspect-video w-full overflow-hidden bg-black">
-                <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/-ZWJ22-pYI0"
-                  title="Dvor trailer"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              </div>
-            </div>
             <nav
               className="flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
               aria-label="Site pages"
