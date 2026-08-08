@@ -13,7 +13,7 @@ export default function Home() {
           <img
             src="/images/logo4.png"
             alt="Studio Betonika"
-            className="h-auto max-h-[17.5rem] w-auto max-w-[calc(100vw-4rem)] object-contain object-left sm:max-h-[20rem] sm:max-w-5xl"
+            className="h-auto max-h-[8.75rem] w-auto max-w-[calc((100vw-4rem)/2)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
           />
           <p className="mt-8 text-left font-normal text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
             Brutalist games.
