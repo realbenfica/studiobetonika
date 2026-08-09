@@ -20,7 +20,7 @@ export function Dvor() {
           />
         </div>
       </div>
-      <p className="mt-[2lh] mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
+      <p className="mt-[1lh] mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
         <span className="inline-flex flex-wrap items-center gap-x-2">
           <DvorLogo />
           out 1 September 2026
@@ -38,7 +38,7 @@ export function Dvor() {
             <SteamLogo />
           </a>
         </span>
-        <span className="mt-4 font-normal">
+        <span className="mt-[calc(1rem*1.33*2)] font-normal">
           <a
             href="https://ditto.fm/dvor"
             target="_blank"
