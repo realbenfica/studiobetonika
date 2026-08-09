@@ -8,7 +8,7 @@
 }
 
 @theme inline {
-  --font-family-sans: var(--font-alex), ui-sans-serif, system-ui, sans-serif;
+  --font-family-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --color-background: #1a1a1a;
   --color-foreground: var(--foreground);
   --color-logo-grid: var(--logo-grid);
@@ -27,7 +27,6 @@ body {
   max-width: 100vw;
   background-color: #1a1a1a;
   color: var(--foreground);
-  font-family: var(--font-alex), ui-sans-serif, system-ui, sans-serif;
-  font-feature-settings: "ss01" 1;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
 }

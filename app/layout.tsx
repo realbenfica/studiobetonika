@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Syne } from "next/font/google";
 import localFont from "next/font/local";
 import { GoogleAnalytics } from "./components/google-analytics";
 import "./globals.css";
@@ -7,6 +8,9 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
+
+/** Flip to `false` to restore PP Alex (brand face). */
+const USE_SYNE = true;
 
 const alex = localFont({
   src: [
@@ -21,9 +25,18 @@ const alex = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-alex",
+  variable: "--font-sans",
   display: "swap",
 });
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const font = USE_SYNE ? syne : alex;
 
 export const metadata: Metadata = {
   title: "Studio Betonika",
@@ -38,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${alex.variable} h-full w-full overflow-x-hidden bg-[#1a1a1a] font-sans antialiased`}
+      className={`${font.variable} h-full w-full overflow-x-hidden bg-[#1a1a1a] font-sans antialiased`}
     >
       <body className="flex min-h-full w-full flex-col overflow-x-hidden bg-[#1a1a1a] font-sans">
         <GoogleAnalytics />
