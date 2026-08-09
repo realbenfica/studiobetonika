@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { SocialLinks } from "./social-links";
 
-const footerText =
+const footerLinkText =
+  "text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
+const footerLegalText =
   "text-[clamp(0.375rem,2vw,0.625rem)] leading-none tracking-normal sm:text-[clamp(0.4375rem,2.5vw,0.875rem)] sm:tracking-[0.08em]";
 
 type SiteFooterProps = {
@@ -14,14 +16,14 @@ export function SiteFooter({ variant = "default", className = "" }: SiteFooterPr
 
   return (
     <footer
-      className={`pb-2 text-logo-grid uppercase ${footerText} ${
+      className={`pb-2 text-logo-grid uppercase ${
         isHome ? "w-max max-w-full self-start text-left" : "mx-auto w-fit text-center"
       } ${className}`}
     >
       {isHome && <SocialLinks className="mb-6" />}
 
       <div
-        className={`flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3 ${
+        className={`flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap ${footerLinkText} sm:gap-x-3 ${
           isHome ? "" : "justify-center"
         }`}
       >
@@ -45,7 +47,7 @@ export function SiteFooter({ variant = "default", className = "" }: SiteFooterPr
         )}
         <a
           href="mailto:hello@studiobetonika.com"
-          className="inline-flex items-center transition-colors hover:text-logo-accent"
+          className="inline-flex items-center font-bold transition-colors hover:text-logo-accent"
         >
           <span>hello</span>
           <span className="mx-0.5 inline-flex shrink-0 items-center justify-center border border-logo-grid px-0.5 leading-none">
@@ -54,7 +56,7 @@ export function SiteFooter({ variant = "default", className = "" }: SiteFooterPr
           <span>studiobetonika.com</span>
         </a>
       </div>
-      <p className="mt-2 max-w-3xl normal-case leading-snug">
+      <p className={`mt-2 max-w-3xl normal-case leading-snug ${footerLegalText}`}>
         © 2026 Art Britannia Ltd (trading as Studio Betonika). Company No.
         16631916.
         <br />

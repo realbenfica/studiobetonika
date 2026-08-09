@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
     <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col overflow-x-clip bg-[#1a1a1a] px-4 py-12 sm:px-16 lg:px-24">
       <PageIcon />
       <div className="mx-auto mt-10 w-full max-w-3xl flex-1 text-center sm:mt-14">
-        <div className="mb-8 flex justify-center">
+        <div className="mb-8 flex justify-center text-white">
           <DvorLogo size="large" />
         </div>
         <h1 className="mb-12 text-white font-bold uppercase tracking-[0.08em] text-[clamp(1.5rem,5vw,2.5rem)]">

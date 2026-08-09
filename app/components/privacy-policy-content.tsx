@@ -3,7 +3,7 @@ const sectionHeading =
 
 const subHeading = "text-white/80 font-bold tracking-[0.04em]";
 
-const linkClass = "text-logo-accent transition-colors hover:text-white";
+const linkClass = "text-logo-accent underline transition-colors hover:text-white";
 
 const boldInline = "font-bold text-white/80";
 

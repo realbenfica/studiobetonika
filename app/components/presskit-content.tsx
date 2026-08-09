@@ -1,7 +1,7 @@
 const sectionHeading =
   "text-white/90 font-bold uppercase tracking-[0.08em]";
 
-const linkClass = "text-logo-accent transition-colors hover:text-white";
+const linkClass = "text-logo-accent underline transition-colors hover:text-white";
 
 const boldInline = "font-bold text-white/80";
 

@@ -16,7 +16,7 @@ export function DvorLogo({ className = "", size = "inline" }: DvorLogoProps) {
     <span
       role="img"
       aria-label="Dvor"
-      className={`inline-block shrink-0 bg-white align-[-0.12em] aspect-[588/84] ${maskClasses} ${sizeClass} ${className}`}
+      className={`inline-block shrink-0 bg-current align-[-0.12em] aspect-[588/84] ${maskClasses} ${sizeClass} ${className}`}
     />
   );
 }
