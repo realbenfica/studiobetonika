@@ -17,9 +17,11 @@ export default function Home() {
           </p>
         </div>
 
-        <Dvor />
+        <div className="flex min-h-0 flex-1 flex-col items-start justify-center self-stretch">
+          <Dvor />
+        </div>
 
-        <SiteFooter variant="home" className="mt-8 shrink-0 self-start" />
+        <SiteFooter variant="home" className="mt-4 shrink-0 self-start sm:mt-8" />
       </div>
     </main>
   );
