@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { DvorLogo } from "./components/dvor-logo";
 import { SiteFooter } from "./components/site-footer";
+import { SteamLogo } from "./components/steam-logo";
 
 const pageLinkClass =
   "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
@@ -42,14 +43,17 @@ export default function Home() {
                 out 1 September 2026
               </span>
               <br />
-              <span className="font-normal">Mac &amp; PC on{" "}
+              <span className="inline-flex flex-wrap items-center gap-x-2 font-normal">
+                Mac &amp; PC –{" "}
                 <a
                   href="https://store.steampowered.com/app/4881830/Dvor/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-logo-grid transition-colors hover:text-logo-accent"
+                  className="inline-flex items-center gap-x-1.5 text-white transition-colors hover:text-logo-accent"
+                  aria-label="Wishlist on Steam"
                 >
-                  Steam
+                  Wishlist on
+                  <SteamLogo />
                 </a>
               </span>
               <br />
