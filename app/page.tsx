@@ -21,7 +21,7 @@ export default function Home() {
           <Dvor />
         </div>
 
-        <SiteFooter variant="home" className="mt-4 shrink-0 self-start sm:mt-8" />
+        <SiteFooter variant="home" className="mt-4 shrink-0 self-start lg:mt-8" />
       </div>
     </main>
   );
