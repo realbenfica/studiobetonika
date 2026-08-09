@@ -1,10 +1,5 @@
-import Link from "next/link";
-import { DvorLogo } from "./components/dvor-logo";
+import { Dvor } from "./components/dvor";
 import { SiteFooter } from "./components/site-footer";
-import { SteamLogo } from "./components/steam-logo";
-
-const pageLinkClass =
-  "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
 
 export default function Home() {
   return (
@@ -22,63 +17,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex min-h-0 flex-1 flex-col items-start justify-center self-stretch text-left">
-          <div className="w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
-            <div className="relative aspect-video w-full overflow-hidden bg-black">
-              <iframe
-                className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/-ZWJ22-pYI0"
-                title="Dvor trailer"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            </div>
-          </div>
-          <p className="mt-[2lh] mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-relaxed tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
-            <span className="inline-flex flex-wrap items-center gap-x-2">
-              <DvorLogo />
-              out 1 September 2026
-            </span>
-            <span className="mt-[2lh] inline-flex flex-wrap items-center gap-x-2 font-normal">
-              Mac &amp; PC –{" "}
-              <a
-                href="https://store.steampowered.com/app/4881830/Dvor/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-x-1.5 text-white transition-colors hover:text-logo-accent"
-                aria-label="Wishlist on Steam"
-              >
-                Wishlist on
-                <SteamLogo />
-              </a>
-            </span>
-            <span className="mt-4 font-normal">
-              <a
-                href="https://ditto.fm/dvor"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-logo-grid underline transition-colors hover:text-logo-accent"
-              >
-                Listen to the soundtrack
-              </a>
-            </span>
-          </p>
-          <nav
-            className="mt-4 flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap sm:gap-x-3"
-            aria-label="Site pages"
-          >
-            <Link href="/dvor/press" className={pageLinkClass}>
-              Press Kit
-            </Link>
-            <span className="text-logo-grid" aria-hidden="true">
-              |
-            </span>
-            <Link href="/dvor/privacy-policy" className={pageLinkClass}>
-              Privacy Policy
-            </Link>
-          </nav>
-        </div>
+        <Dvor />
 
         <SiteFooter variant="home" className="mt-8 shrink-0 self-start" />
       </div>
