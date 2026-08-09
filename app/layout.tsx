@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Syne } from "next/font/google";
+import { Archivo, Oswald, Syne } from "next/font/google";
 import localFont from "next/font/local";
 import { GoogleAnalytics } from "./components/google-analytics";
 import "./globals.css";
@@ -9,8 +9,13 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-/** Flip to `false` to restore PP Alex (brand face). */
-const USE_SYNE = true;
+/**
+ * Font switcher.
+ * - `"alex"` → PP Alex (brand; Gosha is no longer in the repo)
+ * - `"archivo"` → preferred trial face
+ * - `"syne"` | `"oswald"` → other trials
+ */
+const TRIAL_FONT = "alex" as "alex" | "syne" | "archivo" | "oswald";
 
 const alex = localFont({
   src: [
@@ -25,18 +30,33 @@ const alex = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-sans",
+  variable: "--font-brand",
   display: "swap",
 });
 
 const syne = Syne({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-sans",
+  variable: "--font-brand",
   display: "swap",
 });
 
-const font = USE_SYNE ? syne : alex;
+const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-brand",
+  display: "swap",
+});
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-brand",
+  display: "swap",
+});
+
+const fonts = { alex, syne, archivo, oswald } as const;
+const font = fonts[TRIAL_FONT];
 
 export const metadata: Metadata = {
   title: "Studio Betonika",
@@ -51,7 +71,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${font.variable} h-full w-full overflow-x-hidden bg-[#1a1a1a] font-sans antialiased`}
+      className={`${font.variable} ${font.className} h-full w-full overflow-x-hidden bg-[#1a1a1a] antialiased`}
     >
       <body className="flex min-h-full w-full flex-col overflow-x-hidden bg-[#1a1a1a] font-sans">
         <GoogleAnalytics />
