@@ -9,7 +9,7 @@ export function PressKitContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
       <section className="space-y-4">
-        <h2 className={sectionHeading}>Key Facts</h2>
+        <h2 className={sectionHeading}>Fact sheet</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
             <span className={boldInline}>Game:</span> Dvor
@@ -55,9 +55,8 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>One-line pitch</h2>
         <p>
-          A falling-block puzzle game where every piece is a slab of Soviet
-          concrete — and where you build without fear in Panelka, or compete for
-          the record in Stroyka.
+          A falling-block puzzle game where every piece is a fragment of Soviet
+          nostalgia, set to brutalist aesthetics and an original soundtrack.
         </p>
       </section>
 
@@ -65,10 +64,11 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Short description</h2>
         <p>
           Dvor is a falling-block game in two parts. Panelka rewards clean
-          building over speed — no line clears, no pressure, just a facade that
-          reveals itself piece by piece. Stroyka is the competitive branch: an
-          endless Olympics marathon, a 40-line Sprint, and a Daily Challenge
-          with a worldwide leaderboard.
+          building – leave a gap and it&apos;s classic rules until you clear
+          back to it, but build clean and the facade comes to life, piece by
+          piece. Stroyka is the competitive branch: an endless Olympics
+          marathon, a 40-line Sprint, and a Daily Challenge with a worldwide
+          leaderboard.
         </p>
       </section>
 
@@ -80,8 +80,10 @@ export function PressKitContent() {
             scoring, speed curves, and level system
           </li>
           <li>
-            <span className={boldInline}>Panelka mode</span> — build the full
-            facade, no line clearing, trigger Panelka at row 16
+            <span className={boldInline}>Panelka mode</span> — build without
+            clearing lines; leave a gap and it switches to classic rules until
+            you clear back down to it; build clean with no gaps and reach the
+            twelfth row to trigger the Panelka reward
           </li>
           <li>
             <span className={boldInline}>Stroyka mode</span> — Olympics
@@ -93,8 +95,8 @@ export function PressKitContent() {
             Summer, Autumn, Winter, Gold
           </li>
           <li>
-            <span className={boldInline}>Facade reveal</span> — as pieces lock,
-            the building comes to life
+            <span className={boldInline}>Facade building</span> — as pieces lock,
+            the facade comes to life
           </li>
           <li>
             <span className={boldInline}>Season selector</span> — choose your
@@ -119,6 +121,12 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>Links</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
+          <li>
+            <span className={boldInline}>Press kit:</span>{" "}
+            <a href="/dvor_presskit.zip" className={linkClass} download>
+              Download press kit (ZIP)
+            </a>
+          </li>
           <li>
             <span className={boldInline}>Steam:</span>{" "}
             <a
@@ -150,11 +158,10 @@ export function PressKitContent() {
               rel="noopener noreferrer"
             >
               ditto.fm/dvor
-            </a>{" "}
-            — all major streaming platforms
+            </a>
           </li>
           <li>
-            <span className={boldInline}>Privacy policy:</span>{" "}
+            <span className={boldInline}>Privacy:</span>{" "}
             <a href="/dvor/privacy-policy" className={linkClass}>
               studiobetonika.com/dvor/privacy-policy
             </a>
@@ -166,15 +173,26 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>About the Studio</h2>
         <p>
           Studio Betonika is an independent game studio founded by Angelina
-          Severino and Alex Almeida, a wife and husband based in London.
+          Severino and Alex Almeida – a wife and husband who live in London with
+          their three daughters.
         </p>
         <p>
-          Angelina Severino is a visual artist and award-winning designer —
-          Cannes Lions, Global Talent visa holder, keynote speaker across design
-          and technology. Her art project Posteress, a minimalist poster studio
-          featured in Grafik Editions and People of Print, sits at the heart of
-          what she brings to Dvor: typography and architecture treated as art
-          forms in their own right.{" "}
+          Angelina Severino is a Visual Artist and award-winning Designer behind
+          Dvor&apos;s game art and game design. Her awards include Cannes Lions,
+          Epica, Global Talent UK – Exceptional Talent in Digital Technology;
+          she&apos;s also an international keynote speaker across Design and
+          Technology.
+        </p>
+        <p>
+          Under the name Posteress her poster art is featured in Grafik
+          Editions, she is a member of People of Print, and her designs
+          participated in multiple apparel collaborations with brands like Zara,
+          Massimo Dutti, etc.
+        </p>
+        <p>
+          Angelina&apos;s art sits at the heart of what she brings to Dvor:
+          design, typography and architecture treated as art forms in their own
+          right.{" "}
           <a
             href="https://angelinaseverino.com"
             className={linkClass}
@@ -183,7 +201,7 @@ export function PressKitContent() {
           >
             angelinaseverino.com
           </a>{" "}
-          —{" "}
+          –{" "}
           <a
             href="https://posteress.com"
             className={linkClass}
@@ -194,60 +212,67 @@ export function PressKitContent() {
           </a>
         </p>
         <p>
-          Their parents belong to the same generation as Alexey Pajitnov, who
-          created Tetris in 1984. Angelina grew up in the Soviet Union and later
-          lived in Minsk. The family is now settled in London with their
-          daughters.
+          Alex Almeida is the game developer and music composer and producer of
+          Dvor, previously at Kwalee – a mobile gaming company founded by the
+          former owner of Codemasters.
         </p>
         <p>
-          Studio Betonika takes its name from brutalist concrete —{" "}
-          <em className="text-white/80 italic">beton</em>, the material, the
-          aesthetic, the world Tetris was born in. Their first game is Dvor. The
-          word means courtyard in Russian. The space between the blocks. The
-          place where Soviet children played.
+          Angelina grew up in the Soviet Union and later lived in Minsk for more
+          than 20 years. Long before consoles ever reached her, she played the
+          unofficial handheld games.
         </p>
-        <p>Dvor is their first game. It arrives fully formed.</p>
+        <p>
+          Alex played the same kind of handheld as a child in Algarve, Portugal
+          – an ocean and an entire political system away.
+        </p>
       </section>
 
       <section className="space-y-4">
         <h2 className={sectionHeading}>About Dvor</h2>
         <p>
-          <span className={boldInline}>Panelka</span> is the prime experience —
-          designed for people who want to feel something. Built on NES-authentic
-          mechanics, its pieces are called concretes: slabs of a Soviet
-          prefabricated apartment block, falling into place. As each one locks,
-          it reveals part of the facade — a window, a balcony, a stained panel.
-          Posteress gives the game a visual identity unlike anything else in the
-          genre; the 16:9 layout turns a portrait game into an artistic
-          statement, with the space around the board as much a part of the
-          design as the board itself.
+          Dvor means courtyard in Russian – the shared space between apartment
+          blocks where countless childhoods happened. It was an extension of the
+          living room; the bench outside, of the couch. People could leave the
+          most valuable items out there and they&apos;d never be touched. Any
+          child could be left in the dvor to play with their friends – and their
+          parents would only periodically step out to check on them. Bench
+          conversations, hanging up laundry, football against a wall, whole
+          blocks turned into a safe communal space. The space between the
+          blocks. The place where Soviet children played, where life happened.
         </p>
         <p>
-          In Panelka, rows don&apos;t clear — you build. The facade reveals
-          itself piece by piece. When the building reaches row 16 with no gaps,
-          the game rewards you: the stars come out, the board clears, and the
-          speed climbs. Leave a hole, and the response is precise — lines clear
-          above it, exposing the gap so you can fill it from below.
+          Panelka is the prime experience. Its mechanics are NES authentic – its
+          pieces are called concretes: slabs of a Soviet prefabricated apartment
+          block, falling into place. As each one locks, it reveals part of the
+          facade – a window, a balcony, a painted panel. Posteress gives the
+          game a visual identity unlike anything else in the genre – the space
+          around the board is as carefully designed as the board itself.
         </p>
         <p>
-          Five atmosphere states evolve as you play — from the warmth of spring
-          through the urgency of autumn and the cold drive of winter —
-          culminating in a gold transformation that has to be earned. The
-          soundtrack evolves with the atmosphere; by the time gold arrives, the
-          music has changed completely.
+          In Panelka, rows don&apos;t clear on their own – you build. Leave a
+          gap, though, and it switches to classic rules: full rows clear normally
+          until you&apos;ve cleared your way back down to it. Build clean, with
+          no gaps at all, and the whole board rewards you instead – the board
+          clears itself, and the speed climbs.
         </p>
         <p>
-          <span className={boldInline}>Stroyka</span> is the competitive branch —
-          three modes for players who want records and rankings. Olympics is a
-          marathon, slow to fast. Sprint is a time trial against the clock.
-          Daily Challenge resets globally every 24 hours and feeds a worldwide
-          leaderboard.
+          Five atmosphere states evolve as you play – from the warmth of spring
+          through the rains of autumn and the cold drive of winter – culminating
+          in a gold transformation that has to be earned. The soundtrack changes
+          with the atmospheres.
         </p>
         <p>
-          Panelka has no advertisements, no in-app purchases, no daily
-          obligations — one price, and both modes feed a global leaderboard
-          tracked across all platforms.
+          Stroyka is the competitive branch – three modes for players who crave
+          records and rankings. Olympics is a marathon, slow to fast. Sprint is a
+          time trial against the clock. Daily Challenge resets globally every 24
+          hours and feeds a worldwide leaderboard.
         </p>
+        <p>
+          Dvor has no advertisements, no in-app purchases, no daily obligations
+          – one price, and both modes feed a global leaderboard tracked across
+          all platforms.
+        </p>
+        <p>The version the falling blocks game always deserved.</p>
       </section>
 
       <section className="space-y-4">
@@ -260,8 +285,8 @@ export function PressKitContent() {
             </a>
           </li>
           <li>
-            <span className={boldInline}>Company:</span> Art Britannia Ltd,
-            trading as Studio Betonika
+            <span className={boldInline}>Company:</span> Studio Betonika (Art
+            Britannia Ltd)
           </li>
           <li>
             <span className={boldInline}>Location:</span> London, United Kingdom
