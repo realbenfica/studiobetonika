@@ -7,7 +7,7 @@ const pageLinkClass =
 
 export function Dvor() {
   return (
-    <div className="flex w-full flex-col items-start self-stretch text-left">
+    <div className="mt-6 flex w-full flex-col items-start self-stretch text-left min-[2000px]:mt-10">
       <div className="w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
         <div className="relative aspect-video w-full overflow-hidden bg-black">
           <iframe
@@ -20,12 +20,12 @@ export function Dvor() {
           />
         </div>
       </div>
-      <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)] xl:mt-[1lh] xl:leading-relaxed">
+      <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)] min-[2000px]:mt-[1lh] min-[2000px]:leading-relaxed">
         <span className="inline-flex flex-wrap items-center gap-x-2">
           <DvorLogo />
           out 1 September 2026
         </span>
-        <span className="mt-3 inline-flex flex-wrap items-center gap-x-2 font-normal xl:mt-[2lh]">
+        <span className="mt-3 inline-flex flex-wrap items-center gap-x-2 font-normal min-[2000px]:mt-[2lh]">
           Mac &amp; PC –{" "}
           <a
             href="https://store.steampowered.com/app/4881830/Dvor/"
@@ -38,7 +38,7 @@ export function Dvor() {
             <SteamLogo />
           </a>
         </span>
-        <span className="mt-3 font-normal xl:mt-[calc(1rem*1.33*2)]">
+        <span className="mt-3 font-normal min-[2000px]:mt-[calc(1rem*1.33*2)]">
           <a
             href="https://ditto.fm/dvor"
             target="_blank"
@@ -50,7 +50,7 @@ export function Dvor() {
         </span>
       </p>
       <nav
-        className="mt-1.5 flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap xl:mt-4 sm:gap-x-3"
+        className="mt-1.5 flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap min-[2000px]:mt-4 sm:gap-x-3"
         aria-label="Site pages"
       >
         <Link href="/dvor/press" className={pageLinkClass}>
