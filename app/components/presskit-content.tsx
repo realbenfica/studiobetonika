@@ -122,12 +122,6 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Links</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className={boldInline}>Press kit:</span>{" "}
-            <a href="/dvor_presskit.zip" className={linkClass} download>
-              Download press kit (ZIP)
-            </a>
-          </li>
-          <li>
             <span className={boldInline}>Steam:</span>{" "}
             <a
               href="https://store.steampowered.com/app/4881830/Dvor/"
