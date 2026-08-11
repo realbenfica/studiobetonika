@@ -15,7 +15,7 @@ export const viewport: Viewport = {
  * - `"barlow"` → preferred trial face (geometric grotesque, similar feel to Gosha)
  * - `"archivo"` | `"syne"` | `"oswald"` → other trials
  */
-const TRIAL_FONT = "barlow" as "alex" | "barlow" | "syne" | "archivo" | "oswald";
+const TRIAL_FONT = "alex" as "alex" | "barlow" | "syne" | "archivo" | "oswald";
 
 const alex = localFont({
   src: [
