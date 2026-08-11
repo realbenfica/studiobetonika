@@ -1,0 +1,28 @@
+---
+description: Git workflow — what "push" means in this project
+alwaysApply: true
+---
+
+# Git "Push" Workflow
+
+When the user says **push** (without further qualification), execute this full workflow on the **staging** branch:
+
+1. **Commit** all changes on `staging` (stage everything relevant, write a commit message, commit)
+2. **Push** `staging` to `origin`
+3. **Merge** `staging` into `main` and push `main` to `origin`
+
+"Saying push" is explicit permission to commit — treat it as a commit request.
+
+## Narrower commands
+
+If the user says **push staging**, do only steps 1–2 (commit on staging + push staging). Do **not** merge to main.
+
+For any other variation, follow the user's exact wording.
+
+## Examples
+
+| User says | Action |
+|-----------|--------|
+| "push" | commit staging → push staging → merge staging into main → push main |
+| "push staging" | commit staging → push staging |
+| "merge staging to main" | merge only (no implied commit unless stated) |

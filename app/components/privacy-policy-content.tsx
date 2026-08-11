@@ -9,7 +9,7 @@ const boldInline = "font-bold text-white/80";
 
 export function PrivacyPolicyContent() {
   return (
-    <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] text-white/70 leading-relaxed">
+    <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] sm:text-[clamp(1.75rem,5.6vw,2rem)] text-white/70 leading-relaxed">
       <div className="space-y-1 text-white/50">
         <p className="italic">Last updated: June 2026</p>
       </div>
@@ -232,7 +232,7 @@ export function PrivacyPolicyContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>8. Third-party services</h2>
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[36rem] border-collapse text-left text-[clamp(0.8125rem,2.5vw,0.9375rem)]">
+          <table className="w-full min-w-[36rem] border-collapse text-left text-[clamp(0.8125rem,2.5vw,0.9375rem)] sm:text-[clamp(1.625rem,5vw,1.875rem)]">
             <thead>
               <tr className="border-b border-white/20">
                 <th className="px-3 py-2 font-bold text-white/80">Service</th>
