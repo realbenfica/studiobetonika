@@ -7,7 +7,7 @@ const boldInline = "font-bold text-white/80";
 
 export function PressKitContent() {
   return (
-    <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2vw,1rem)] text-white/70 leading-relaxed">
+    <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.9375rem,2.2vw,1.125rem)] text-white/70 leading-relaxed">
       <section className="space-y-4">
         <h2 className={sectionHeading}>Fact sheet</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
