@@ -4,7 +4,7 @@ import { SiteFooter } from "./components/site-footer";
 export default function Home() {
   return (
     <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col items-center overflow-x-clip bg-[#1a1a1a] px-8 py-8 sm:px-4">
-      <div className="flex min-h-0 w-full max-w-full flex-1 flex-col sm:w-max sm:max-w-5xl">
+      <div className="flex min-h-0 w-full max-w-full flex-1 flex-col sm:w-max sm:max-w-5xl min-[2000px]:max-w-6xl">
         <div className="shrink-0 self-start">
           <img
             src="/images/logo4.png"

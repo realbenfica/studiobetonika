@@ -3,12 +3,12 @@ import { DvorLogo } from "./dvor-logo";
 import { SteamLogo } from "./steam-logo";
 
 const pageLinkClass =
-  "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[0.354375rem] sm:text-[0.942rem] leading-none tracking-normal sm:tracking-[0.08em]";
+  "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[0.354375rem] sm:text-[0.942rem] min-[2000px]:text-[2.826rem] leading-none tracking-normal sm:tracking-[0.08em]";
 
 export function Dvor() {
   return (
     <div className="mt-6 flex w-full flex-col items-start self-stretch text-left min-[2000px]:mt-10">
-      <div className="w-full max-w-[calc(100vw-4rem)] sm:max-w-xl">
+      <div className="w-full max-w-[calc(100vw-4rem)] sm:max-w-xl min-[2000px]:max-w-4xl">
         <div className="relative aspect-video w-full overflow-hidden bg-black">
           <iframe
             className="absolute inset-0 h-full w-full"
@@ -20,7 +20,7 @@ export function Dvor() {
           />
         </div>
       </div>
-      <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[0.70875rem] sm:text-[1.254rem] min-[2000px]:mt-[1lh] min-[2000px]:leading-relaxed">
+      <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[0.70875rem] sm:text-[1.254rem] min-[2000px]:text-[3.762rem] min-[2000px]:mt-[1lh] min-[2000px]:leading-relaxed">
         <span className="inline-flex flex-wrap items-center gap-x-2">
           <DvorLogo />
           out 1 September 2026
