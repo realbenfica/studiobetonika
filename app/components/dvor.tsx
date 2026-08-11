@@ -22,7 +22,7 @@ export function Dvor() {
       </div>
       <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[clamp(0.70875rem,3.807vw,1.215rem)] sm:text-[clamp(0.875rem,4.7vw,1.5rem)] min-[2000px]:mt-[1lh] min-[2000px]:leading-relaxed">
         <span className="inline-flex flex-wrap items-center gap-x-2">
-          <span className="inline-block scale-[1.1] sm:scale-100 origin-left"><DvorLogo /></span>
+          <DvorLogo />
           out 1 September 2026
         </span>
         <span className="mt-3 inline-flex flex-wrap items-center gap-x-2 font-normal min-[2000px]:mt-[2lh]">
