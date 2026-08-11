@@ -3,7 +3,7 @@ import { DvorLogo } from "./dvor-logo";
 import { SteamLogo } from "./steam-logo";
 
 const pageLinkClass =
-  "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
+  "font-bold text-logo-grid transition-colors hover:text-logo-accent uppercase text-[clamp(0.39375rem,2.25vw,0.7875rem)] sm:text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
 
 export function Dvor() {
   return (
@@ -20,7 +20,7 @@ export function Dvor() {
           />
         </div>
       </div>
-      <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)] min-[2000px]:mt-[1lh] min-[2000px]:leading-relaxed">
+      <p className="mt-3 mb-0 flex flex-col text-left font-bold text-white/40 uppercase leading-tight tracking-[0.12em] text-[clamp(0.7875rem,4.23vw,1.35rem)] sm:text-[clamp(0.875rem,4.7vw,1.5rem)] min-[2000px]:mt-[1lh] min-[2000px]:leading-relaxed">
         <span className="inline-flex flex-wrap items-center gap-x-2">
           <DvorLogo />
           out 1 September 2026
