@@ -9,7 +9,7 @@ const boldInline = "font-bold text-white/80";
 
 export function PrivacyPolicyContent() {
   return (
-    <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2.8vw,1rem)] sm:text-[clamp(1.75rem,5.6vw,2rem)] text-white/70 leading-relaxed">
+    <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.875rem,2vw,1rem)] text-white/70 leading-relaxed">
       <div className="space-y-1 text-white/50">
         <p className="italic">Last updated: June 2026</p>
       </div>
