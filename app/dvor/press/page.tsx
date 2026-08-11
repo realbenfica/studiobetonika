@@ -17,7 +17,7 @@ export default function PressPage() {
         <div className="mb-8 flex justify-center text-white">
           <DvorLogo size="large" />
         </div>
-        <h1 className="mb-12 text-white font-bold uppercase tracking-[0.08em] text-[clamp(1.5rem,5vw,2.5rem)]">
+        <h1 className="mb-14 text-white font-bold uppercase tracking-[0.08em] text-[clamp(1.5rem,5vw,2.5rem)]">
           Press Kit
         </h1>
         <p className="mb-12 text-left">
