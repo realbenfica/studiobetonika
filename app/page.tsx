@@ -9,7 +9,7 @@ export default function Home() {
           <img
             src="/images/logo4.png"
             alt="Studio Betonika"
-            className="h-auto max-h-[calc(8.75rem*1.15)] w-auto max-w-[calc((100vw-4rem)/2*1.15)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
+            className="h-auto max-h-[calc(8.75rem*1.265)] w-auto max-w-[calc((100vw-4rem)/2*1.265)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
           />
           <p className="mt-4 flex flex-col gap-[0.3125em] text-left font-normal text-white/40 uppercase leading-none tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
             <span>Brutalist games.</span>
