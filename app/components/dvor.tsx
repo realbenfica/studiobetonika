@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DvorLogo } from "./dvor-logo";
+import { ItchLogo } from "./itch-logo";
 import { SteamLogo } from "./steam-logo";
 
 const pageLinkClass =
@@ -27,16 +28,22 @@ export function Dvor() {
         </span>
         <span className="mt-1.5 inline-flex flex-wrap items-center gap-x-2 font-normal min-[2000px]:!mt-3">
           Mac &amp; PC –{" "}
-          <a
-            href="https://store.steampowered.com/app/4881830/Dvor/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-x-1.5 text-white transition-colors hover:text-logo-accent"
-            aria-label="Wishlist on Steam"
-          >
+          <span className="inline-flex flex-wrap items-center gap-x-1.5 text-white">
             Wishlist on
-            <SteamLogo />
-          </a>
+            <a
+              href="https://store.steampowered.com/app/4881830/Dvor/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center transition-colors hover:text-logo-accent"
+              aria-label="Wishlist on Steam"
+            >
+              <SteamLogo />
+            </a>
+            <span className="text-white/40" aria-hidden="true">
+              /
+            </span>
+            <ItchLogo />
+          </span>
         </span>
         <span className="mt-1.5 font-normal min-[2000px]:!mt-20">
           <a
