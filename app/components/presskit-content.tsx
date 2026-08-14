@@ -133,6 +133,17 @@ export function PressKitContent() {
             </a>
           </li>
           <li>
+            <span className={boldInline}>itch.io:</span>{" "}
+            <a
+              href="https://studio-betonika.itch.io/dvor"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              studio-betonika.itch.io/dvor
+            </a>
+          </li>
+          <li>
             <span className={boldInline}>Trailer:</span>{" "}
             <a
               href="https://youtu.be/-ZWJ22-pYI0"
