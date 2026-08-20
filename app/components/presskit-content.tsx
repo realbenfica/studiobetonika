@@ -171,13 +171,11 @@ export function PressKitContent() {
               studiobetonika.com/dvor/privacy-policy
             </a>
           </li>
-        </ul>
-        <ul className="list-disc space-y-1.5 pl-5 pt-2 text-[0.9em] text-white/45 marker:text-white/25">
           <li>
-            <span className="font-bold text-white/55">IGDB:</span>{" "}
+            <span className={boldInline}>IGDB:</span>{" "}
             <a
               href="https://www.igdb.com/games/dvor"
-              className="text-logo-accent/70 underline transition-colors hover:text-logo-accent"
+              className={linkClass}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -185,10 +183,10 @@ export function PressKitContent() {
             </a>
           </li>
           <li>
-            <span className="font-bold text-white/55">IndieDB:</span>{" "}
+            <span className={boldInline}>IndieDB:</span>{" "}
             <a
               href="https://www.indiedb.com/games/dvor"
-              className="text-logo-accent/70 underline transition-colors hover:text-logo-accent"
+              className={linkClass}
               target="_blank"
               rel="noopener noreferrer"
             >
