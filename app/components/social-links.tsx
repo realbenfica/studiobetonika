@@ -31,15 +31,7 @@ const SOCIALS = [
     label: "Facebook (Studio Betonika)",
     path: "M24 12.073c0 -6.627 -5.373 -12 -12 -12s-12 5.373 -12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0 -3.007 1.792 -4.669 4.533 -4.669 1.312 0 2.686 0.235 2.686 0.235v2.953H15.83c-1.491 0 -1.956 0.925 -1.956 1.874v2.25h3.328l-0.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z",
   },
-  {
-    name: "X",
-    href: `https://x.com/${USERNAME}`,
-    label: `X (@${USERNAME})`,
-    path: "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8 -7.584 -6.638 7.584H0.474l8.6 -9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z",
-  },
 ] as const;
-
-const VISIBLE_SOCIALS = new Set(["TikTok", "Bluesky"]);
 
 function SocialIcon({ path }: { path: string }) {
   return (
@@ -60,8 +52,7 @@ export function SocialLinks({ className = "mt-8" }: { className?: string }) {
       className={`flex max-w-full flex-wrap items-center justify-start gap-5 sm:gap-8 ${className}`}
       aria-label="Social media"
     >
-      {SOCIALS.filter(({ name }) => VISIBLE_SOCIALS.has(name)).map(
-        ({ name, href, path, label }) => (
+      {SOCIALS.map(({ name, href, path, label }) => (
         <a
           key={name}
           href={href}
