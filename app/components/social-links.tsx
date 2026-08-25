@@ -39,6 +39,8 @@ const SOCIALS = [
   },
 ] as const;
 
+const VISIBLE_SOCIALS = new Set(["TikTok", "Bluesky"]);
+
 function SocialIcon({ path }: { path: string }) {
   return (
     <svg
@@ -58,7 +60,8 @@ export function SocialLinks({ className = "mt-8" }: { className?: string }) {
       className={`flex max-w-full flex-wrap items-center justify-start gap-5 sm:gap-8 ${className}`}
       aria-label="Social media"
     >
-      {SOCIALS.map(({ name, href, path, label }) => (
+      {SOCIALS.filter(({ name }) => VISIBLE_SOCIALS.has(name)).map(
+        ({ name, href, path, label }) => (
         <a
           key={name}
           href={href}
