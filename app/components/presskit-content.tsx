@@ -157,12 +157,12 @@ export function PressKitContent() {
           <li>
             <span className={boldInline}>Gameplay:</span>{" "}
             <a
-              href="https://youtu.be/diClmiKXpZg"
+              href="https://youtu.be/PR9IFVnkOks"
               className={linkClass}
               target="_blank"
               rel="noopener noreferrer"
             >
-              youtu.be/diClmiKXpZg
+              youtu.be/PR9IFVnkOks
             </a>
           </li>
           <li>
