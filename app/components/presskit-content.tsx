@@ -208,54 +208,6 @@ export function PressKitContent() {
       </section>
 
       <section className="space-y-4">
-        <h2 className={sectionHeading}>About the Studio</h2>
-        <p>
-          Studio Betonika is an independent game studio founded by a wife and
-          husband who live in London with their three daughters.
-        </p>
-        <p>
-          One half of the studio is a Visual Artist and award-winning Designer
-          behind Dvor&apos;s game art and game design. Her awards include Cannes Lions,
-          Epica, Global Talent UK – Exceptional Talent in Digital Technology;
-          she&apos;s also an international keynote speaker across Design and
-          Technology.
-        </p>
-        <p>
-          Under the name Posteress her poster art is featured in Grafik
-          Editions, she is a member of People of Print, and her designs
-          participated in multiple apparel collaborations with brands like Zara,
-          Massimo Dutti, etc.
-        </p>
-        <p>
-          Her art sits at the heart of what she brings to Dvor: design,
-          typography and architecture treated as art forms in their own
-          right.{" "}
-          <a
-            href="https://posteress.com"
-            className={linkClass}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            posteress.com
-          </a>
-        </p>
-        <p>
-          The other half is the game developer and music composer and producer
-          of Dvor, previously at Kwalee – a mobile gaming company founded by the
-          former owner of Codemasters.
-        </p>
-        <p>
-          She grew up in the Soviet Union and later lived in Minsk for more
-          than 20 years. Long before consoles ever reached her, she played the
-          unofficial handheld games.
-        </p>
-        <p>
-          He played the same kind of handheld as a child in Algarve, Portugal
-          – an ocean and an entire political system away.
-        </p>
-      </section>
-
-      <section className="space-y-4">
         <h2 className={sectionHeading}>About Dvor</h2>
         <p>
           Dvor means courtyard in Russian – the shared space between apartment
@@ -301,6 +253,25 @@ export function PressKitContent() {
           all platforms.
         </p>
         <p>The version the falling blocks game always deserved.</p>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={sectionHeading}>About the Studio</h2>
+        <p>
+          Studio Betonika is small independent game studio based in London.
+        </p>
+        <p>
+          The art and game design for Dvor are by Posteress, an award-winning
+          Visual Artist and Designer.{" "}
+          <a
+            href="https://posteress.com"
+            className={linkClass}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            posteress.com
+          </a>
+        </p>
       </section>
 
       <section className="space-y-4">
