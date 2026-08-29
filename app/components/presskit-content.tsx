@@ -210,13 +210,12 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>About the Studio</h2>
         <p>
-          Studio Betonika is an independent game studio founded by Angelina
-          Severino and Alex Almeida – a wife and husband who live in London with
-          their three daughters.
+          Studio Betonika is an independent game studio founded by a wife and
+          husband who live in London with their three daughters.
         </p>
         <p>
-          Angelina Severino is a Visual Artist and award-winning Designer behind
-          Dvor&apos;s game art and game design. Her awards include Cannes Lions,
+          One half of the studio is a Visual Artist and award-winning Designer
+          behind Dvor&apos;s game art and game design. Her awards include Cannes Lions,
           Epica, Global Talent UK – Exceptional Talent in Digital Technology;
           she&apos;s also an international keynote speaker across Design and
           Technology.
@@ -228,18 +227,9 @@ export function PressKitContent() {
           Massimo Dutti, etc.
         </p>
         <p>
-          Angelina&apos;s art sits at the heart of what she brings to Dvor:
-          design, typography and architecture treated as art forms in their own
+          Her art sits at the heart of what she brings to Dvor: design,
+          typography and architecture treated as art forms in their own
           right.{" "}
-          <a
-            href="https://angelinaseverino.com"
-            className={linkClass}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            angelinaseverino.com
-          </a>{" "}
-          –{" "}
           <a
             href="https://posteress.com"
             className={linkClass}
@@ -250,17 +240,17 @@ export function PressKitContent() {
           </a>
         </p>
         <p>
-          Alex Almeida is the game developer and music composer and producer of
-          Dvor, previously at Kwalee – a mobile gaming company founded by the
+          The other half is the game developer and music composer and producer
+          of Dvor, previously at Kwalee – a mobile gaming company founded by the
           former owner of Codemasters.
         </p>
         <p>
-          Angelina grew up in the Soviet Union and later lived in Minsk for more
+          She grew up in the Soviet Union and later lived in Minsk for more
           than 20 years. Long before consoles ever reached her, she played the
           unofficial handheld games.
         </p>
         <p>
-          Alex played the same kind of handheld as a child in Algarve, Portugal
+          He played the same kind of handheld as a child in Algarve, Portugal
           – an ocean and an entire political system away.
         </p>
       </section>
