@@ -7,6 +7,44 @@ const linkClass = "text-logo-accent underline transition-colors hover:text-white
 
 const boldInline = "font-bold text-white/80";
 
+const thirdPartyServices = [
+  {
+    name: "Steam",
+    purpose: "Windows and macOS distribution",
+    provider: "Valve Corporation",
+    policyUrl: "https://store.steampowered.com/privacy_agreement",
+    policyLabel: "store.steampowered.com/privacy_agreement",
+  },
+  {
+    name: "Google Firebase",
+    purpose: "Leaderboard storage",
+    provider: "Google LLC",
+    policyUrl: "https://policies.google.com/privacy",
+    policyLabel: "policies.google.com/privacy",
+  },
+  {
+    name: "Nintendo Switch",
+    purpose: "Console distribution (from Jan 2027)",
+    provider: "Nintendo Co., Ltd.",
+    policyUrl: "https://www.nintendo.co.uk/legal/privacy-policy",
+    policyLabel: "nintendo.co.uk/legal/privacy-policy",
+  },
+  {
+    name: "Xbox",
+    purpose: "Console distribution (from Dec 2026)",
+    provider: "Microsoft",
+    policyUrl: "https://privacy.microsoft.com",
+    policyLabel: "privacy.microsoft.com",
+  },
+  {
+    name: "PlayStation",
+    purpose: "Console distribution (from Dec 2026)",
+    provider: "Sony Interactive Entertainment",
+    policyUrl: "https://www.playstation.com/en-gb/legal/privacy-policy",
+    policyLabel: "playstation.com/en-gb/legal/privacy-policy",
+  },
+];
+
 export function PrivacyPolicyContent() {
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 text-left text-[clamp(0.9375rem,2.2vw,1.125rem)] text-white/70 leading-relaxed">
@@ -231,103 +269,36 @@ export function PrivacyPolicyContent() {
 
       <section className="space-y-4">
         <h2 className={sectionHeading}>8. Third-party services</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[36rem] border-collapse text-left text-[clamp(0.8125rem,2.5vw,0.9375rem)] sm:text-[clamp(1.625rem,5vw,1.875rem)]">
-            <thead>
-              <tr className="border-b border-white/20">
-                <th className="px-3 py-2 font-bold text-white/80">Service</th>
-                <th className="px-3 py-2 font-bold text-white/80">Purpose</th>
-                <th className="px-3 py-2 font-bold text-white/80">Provider</th>
-                <th className="px-3 py-2 font-bold text-white/80">
-                  Privacy policy
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-white/70">
-              <tr className="border-b border-white/10">
-                <td className="px-3 py-2">Steam</td>
-                <td className="px-3 py-2">Windows and macOS distribution</td>
-                <td className="px-3 py-2">Valve Corporation</td>
-                <td className="px-3 py-2">
-                  <a
-                    href="https://store.steampowered.com/privacy_agreement"
-                    className={linkClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    store.steampowered.com/privacy_agreement
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/10">
-                <td className="px-3 py-2">Google Firebase</td>
-                <td className="px-3 py-2">Leaderboard storage</td>
-                <td className="px-3 py-2">Google LLC</td>
-                <td className="px-3 py-2">
-                  <a
-                    href="https://policies.google.com/privacy"
-                    className={linkClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    policies.google.com/privacy
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/10">
-                <td className="px-3 py-2">Nintendo Switch</td>
-                <td className="px-3 py-2">
-                  Console distribution (from Jan 2027)
-                </td>
-                <td className="px-3 py-2">Nintendo Co., Ltd.</td>
-                <td className="px-3 py-2">
-                  <a
-                    href="https://www.nintendo.co.uk/legal/privacy-policy"
-                    className={linkClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    nintendo.co.uk/legal/privacy-policy
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/10">
-                <td className="px-3 py-2">Xbox</td>
-                <td className="px-3 py-2">
-                  Console distribution (from Dec 2026)
-                </td>
-                <td className="px-3 py-2">Microsoft</td>
-                <td className="px-3 py-2">
-                  <a
-                    href="https://privacy.microsoft.com"
-                    className={linkClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    privacy.microsoft.com
-                  </a>
-                </td>
-              </tr>
-              <tr className="border-b border-white/10">
-                <td className="px-3 py-2">PlayStation</td>
-                <td className="px-3 py-2">
-                  Console distribution (from Dec 2026)
-                </td>
-                <td className="px-3 py-2">Sony Interactive Entertainment</td>
-                <td className="px-3 py-2">
-                  <a
-                    href="https://www.playstation.com/en-gb/legal/privacy-policy"
-                    className={linkClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    playstation.com/en-gb/legal/privacy-policy
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {thirdPartyServices.map((service) => (
+            <li
+              key={service.name}
+              className="flex flex-col gap-2 rounded-lg border border-white/15 bg-white/[0.03] p-4"
+            >
+              <p className="font-bold uppercase tracking-[0.06em] text-white/85">
+                {service.name}
+              </p>
+              <dl className="space-y-1 text-[0.9em]">
+                <div className="flex gap-2">
+                  <dt className="shrink-0 text-white/40">Purpose</dt>
+                  <dd>{service.purpose}</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="shrink-0 text-white/40">Provider</dt>
+                  <dd>{service.provider}</dd>
+                </div>
+              </dl>
+              <a
+                href={service.policyUrl}
+                className={`${linkClass} mt-auto text-[0.9em] break-all`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {service.policyLabel}
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="space-y-4">
