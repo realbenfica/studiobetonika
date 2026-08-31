@@ -105,9 +105,7 @@ export function PrivacyPolicyContent() {
               gamer tag on console)
             </li>
             <li>Your score or time</li>
-            <li>
-              The game mode (Panelka, Olympics, Sprint, or Daily Challenge)
-            </li>
+            <li>The game mode (Panelka or Daily Challenge)</li>
             <li>A timestamp</li>
           </ul>
           <p>

@@ -22,8 +22,8 @@ export function PressKitContent() {
             <span className={boldInline}>Genre:</span> Falling-block puzzle
           </li>
           <li>
-            <span className={boldInline}>Platforms:</span> Steam (Mac &amp; PC)
-            —{" "}
+            <span className={boldInline}>Platforms:</span>{" "}
+            Steam (Mac &amp; PC) —{" "}
             <a
               href="https://store.steampowered.com/app/4881830/Dvor/"
               className={linkClass}
@@ -35,7 +35,7 @@ export function PressKitContent() {
             . Xbox, PlayStation, and Nintendo Switch — coming soon.
           </li>
           <li>
-            <span className={boldInline}>Price:</span> £7.99
+            <span className={boldInline}>Price:</span> £5.99 / $6.99 / €6.99
           </li>
           <li>
             <span className={boldInline}>Website:</span>{" "}
@@ -63,11 +63,11 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>Short description</h2>
         <p>
-          Dvor is a falling-block game in two parts. Panelka rewards clean
-          building – leave a gap and it&apos;s classic rules until you clear
-          back to it, but build clean and the facade comes to life, piece by
-          piece. Stroyka is the competitive branch: an endless Olympics
-          marathon, a 40-line Sprint, and a Daily Challenge with a worldwide
+          Dvor is a falling-block game about building, not clearing. In Panelka,
+          rows don&apos;t clear on their own – you build. Leave a gap and
+          it&apos;s classic rules until you clear back down to it; build clean
+          and the facade comes to life, piece by piece. The Daily Challenge
+          deals every player the same pieces once a day, with a worldwide
           leaderboard.
         </p>
       </section>
@@ -76,23 +76,19 @@ export function PressKitContent() {
         <h2 className={sectionHeading}>Features</h2>
         <ul className="list-disc space-y-2 pl-5 marker:text-white/40">
           <li>
-            <span className={boldInline}>NES-authentic mechanics</span> — exact
-            scoring, speed curves, and level system
-          </li>
-          <li>
             <span className={boldInline}>Panelka mode</span> — build without
             clearing lines; leave a gap and it switches to classic rules until
             you clear back down to it; build clean with no gaps and reach the
             twelfth row to trigger the Panelka reward
           </li>
           <li>
-            <span className={boldInline}>Stroyka mode</span> — Olympics
-            (marathon), Sprint (time trial), Daily Challenge (global
-            leaderboard)
+            <span className={boldInline}>Daily Challenge</span> — the same
+            seeded pieces for every player, one attempt a day, worldwide
+            leaderboard
           </li>
           <li>
-            <span className={boldInline}>Five atmosphere states</span> — Spring,
-            Summer, Autumn, Winter, Gold
+            <span className={boldInline}>Evolving atmospheres</span> — four
+            seasons across twelve speed levels, plus the Gold Transformation
           </li>
           <li>
             <span className={boldInline}>Facade building</span> — as pieces lock,
@@ -103,17 +99,16 @@ export function PressKitContent() {
             starting atmosphere
           </li>
           <li>
-            <span className={boldInline}>Tunable DAS/ARR</span> — Modern,
-            Competitive, and NES Authentic presets, plus a Custom mode with
-            fine-control sliders
+            <span className={boldInline}>Tunable DAS/ARR</span> — Modern and
+            Competitive presets, plus a Custom mode with fine-control sliders
           </li>
           <li>
             <span className={boldInline}>Original soundtrack by Betonika</span> —
-            evolves dynamically through all five atmosphere states
+            moves with every season, through to the Gold Transformation
           </li>
           <li>
             <span className={boldInline}>Global leaderboard</span> — Panelka high
-            scores and Stroyka records tracked across all platforms
+            scores and Daily Challenge results tracked across all platforms
           </li>
         </ul>
       </section>
@@ -152,17 +147,6 @@ export function PressKitContent() {
               rel="noopener noreferrer"
             >
               youtu.be/1TmWJuN2piI
-            </a>
-          </li>
-          <li>
-            <span className={boldInline}>Gameplay:</span>{" "}
-            <a
-              href="https://youtu.be/PR9IFVnkOks"
-              className={linkClass}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              youtu.be/PR9IFVnkOks
             </a>
           </li>
           <li>
@@ -221,12 +205,17 @@ export function PressKitContent() {
           blocks. The place where Soviet children played, where life happened.
         </p>
         <p>
-          Panelka is the prime experience. Its mechanics are NES authentic – its
-          pieces are called concretes: slabs of a Soviet prefabricated apartment
-          block, falling into place. As each one locks, it reveals part of the
-          facade – a window, a balcony, a painted panel. Posteress gives the
-          game a visual identity unlike anything else in the genre – the space
-          around the board is as carefully designed as the board itself.
+          Dvor returns the falling-block game to its cultural home: a minimalist
+          marriage of brutalist aesthetics, an original evolving soundtrack, and
+          precise puzzle mechanics. The board is no longer just a playing field.
+          It is a construction site.
+        </p>
+        <p>
+          <span className={boldInline}>Construct the Panelka.</span> The falling
+          pieces are concretes – slabs of a modular building dropping into place.
+          The moment a piece locks down, it transforms from raw material into
+          part of a living facade: a window, a balcony, a concrete panel. Floor
+          by floor, a massive prefabricated block emerges from your play.
         </p>
         <p>
           In Panelka, rows don&apos;t clear on their own – you build. Leave a
@@ -236,16 +225,31 @@ export function PressKitContent() {
           clears itself, and the speed climbs.
         </p>
         <p>
-          Five atmosphere states evolve as you play – from the warmth of spring
-          through the rains of autumn and the cold drive of winter – culminating
-          in a gold transformation that has to be earned. The soundtrack changes
-          with the atmospheres.
+          <span className={boldInline}>Authentic precision.</span> A modern, fair
+          thirteen-bag randomiser alongside customisable DAS and ARR, with full
+          controller support throughout, tested on Xbox Series X|S and PS5
+          controllers.
         </p>
         <p>
-          Stroyka is the competitive branch – three modes for players who crave
-          records and rankings. Olympics is a marathon, slow to fast. Sprint is a
-          time trial against the clock. Daily Challenge resets globally every 24
-          hours and feeds a worldwide leaderboard.
+          <span className={boldInline}>Evolving atmospheres.</span> Four seasons
+          breathe and shift across twelve speed levels as you play – from the
+          quiet warmth of spring, through the dreaminess of summer and the rains
+          of autumn, into the cold drive of winter. Survive long enough to earn
+          the Gold Transformation: the coldness dissolves, the storm breaks, and
+          the atmosphere permanently shifts into gold.
+        </p>
+        <p>
+          <span className={boldInline}>A striking audio-visual synergy.</span>{" "}
+          Art directed by Posteress, a visual artist who treats typography and
+          brutalism as fine art forms – architectural sidebars frame the matrix,
+          turning negative space into design. The original soundtrack by Betonika
+          draws on Soviet music across the decades, from tender waltz to urgent
+          post-punk to euphoric release, moving with every season to mirror the
+          world closing in around you.
+        </p>
+        <p>
+          The Daily Challenge resets globally every 24 hours – the same pieces
+          for every player, one attempt a day, one worldwide leaderboard.
         </p>
         <p>
           Dvor has no advertisements, no in-app purchases, no daily obligations
@@ -258,7 +262,7 @@ export function PressKitContent() {
       <section className="space-y-4">
         <h2 className={sectionHeading}>About the Studio</h2>
         <p>
-          Studio Betonika is small independent game studio based in London.
+          Studio Betonika is a small independent game studio based in London.
         </p>
         <p>
           The art and game design for Dvor are by Posteress, an award-winning
