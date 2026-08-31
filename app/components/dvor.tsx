@@ -12,7 +12,7 @@ export function Dvor() {
         <div className="relative aspect-video w-full overflow-hidden bg-black">
           <iframe
             className="absolute inset-0 h-full w-full"
-            src="https://www.youtube.com/embed/-ZWJ22-pYI0"
+            src="https://www.youtube.com/embed/1TmWJuN2piI"
             title="Dvor trailer"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
