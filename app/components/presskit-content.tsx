@@ -188,6 +188,17 @@ export function PressKitContent() {
               indiedb.com/games/dvor
             </a>
           </li>
+          <li>
+            <span className={boldInline}>Game Press:</span>{" "}
+            <a
+              href="https://www.game.press/g/games/1b046744"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              game.press/g/games/1b046744
+            </a>
+          </li>
         </ul>
       </section>
 
