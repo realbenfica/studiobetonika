@@ -150,6 +150,17 @@ export function PressKitContent() {
             </a>
           </li>
           <li>
+            <span className={boldInline}>Gameplay:</span>{" "}
+            <a
+              href="https://youtu.be/Vo2kRYIB-5U"
+              className={linkClass}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              youtu.be/Vo2kRYIB-5U
+            </a>
+          </li>
+          <li>
             <span className={boldInline}>Soundtrack:</span>{" "}
             <a
               href="https://ditto.fm/dvor"
