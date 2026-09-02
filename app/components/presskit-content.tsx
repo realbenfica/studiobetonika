@@ -286,6 +286,8 @@ export function PressKitContent() {
         <p>
           Studio Betonika is a small independent game studio based in London.
         </p>
+        <p>Development for Dvor is by Alex Severino.</p>
+        <p>The original soundtrack is by Betonika.</p>
         <p>
           The art and game design for Dvor are by Posteress, an award-winning
           Visual Artist and Designer.{" "}
