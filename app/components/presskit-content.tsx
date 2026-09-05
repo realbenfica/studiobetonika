@@ -103,8 +103,10 @@ export function PressKitContent() {
             Competitive presets, plus a Custom mode with fine-control sliders
           </li>
           <li>
-            <span className={boldInline}>Original soundtrack by Betonika</span> —
-            moves with every season, through to the Gold Transformation
+            <span className={boldInline}>
+              Original soundtrack by Alex Severino
+            </span>{" "}
+            — moves with every season, through to the Gold Transformation
           </li>
           <li>
             <span className={boldInline}>Global leaderboard</span> — Panelka high
@@ -264,10 +266,10 @@ export function PressKitContent() {
           <span className={boldInline}>A striking audio-visual synergy.</span>{" "}
           Art directed by Posteress, a visual artist who treats typography and
           brutalism as fine art forms – architectural sidebars frame the matrix,
-          turning negative space into design. The original soundtrack by Betonika
-          draws on Soviet music across the decades, from tender waltz to urgent
-          post-punk to euphoric release, moving with every season to mirror the
-          world closing in around you.
+          turning negative space into design. The original soundtrack by Alex
+          Severino draws on Soviet music across the decades, from tender waltz
+          to urgent post-punk to euphoric release, moving with every season to
+          mirror the world closing in around you.
         </p>
         <p>
           The Daily Challenge resets globally every 24 hours – the same pieces
@@ -300,6 +302,7 @@ export function PressKitContent() {
             posteress.com
           </a>
         </p>
+        <p>Development and music by Alex Severino.</p>
       </section>
 
       <section className="space-y-4">
