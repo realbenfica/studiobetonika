@@ -1,27 +1,24 @@
 import { Dvor } from "./components/dvor";
 import { SiteFooter } from "./components/site-footer";
+import { StudioLogo } from "./components/studio-logo";
 
 export default function Home() {
   return (
-    <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col items-center overflow-x-clip bg-[#1a1a1a] px-8 py-8 sm:px-4">
-      <div className="flex min-h-0 w-full max-w-full flex-1 flex-col sm:w-max sm:max-w-5xl min-[2000px]:max-w-6xl">
-        <div className="shrink-0 self-start">
-          <img
-            src="/images/logo4.png"
-            alt="Studio Betonika"
-            className="h-auto max-h-[calc(8.75rem*1.265)] w-auto max-w-[calc((100vw-4rem)/2*1.265)] object-contain object-left sm:max-h-[10rem] sm:max-w-[32rem]"
-          />
-          <p className="mt-4 flex flex-col gap-[0.3125em] text-left font-normal text-white/40 uppercase leading-none tracking-[0.12em] text-[clamp(0.875rem,4.7vw,1.5rem)]">
-            <span>Brutalist games.</span>
-            <span>Beautiful worlds.</span>
-          </p>
-        </div>
+    <main className="relative flex min-h-dvh w-full max-w-[100vw] flex-col overflow-x-clip bg-background">
+      <div aria-hidden="true" className="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[40rem]" />
 
-        <div className="flex min-h-0 flex-1 flex-col items-start justify-center self-stretch">
-          <Dvor />
-        </div>
+      <header className="relative mx-auto flex w-full max-w-6xl flex-col items-center gap-8 px-4 pt-14 pb-16 text-center sm:gap-10 sm:px-10 sm:pt-20 sm:pb-24">
+        <StudioLogo className="w-[min(88vw,40rem)]" />
+        <p className="rise rise-delay-3 flex flex-col gap-2 text-[clamp(0.8rem,2.6vw,1rem)] font-normal uppercase leading-none tracking-[0.3em] text-white/45">
+          <span>Brutalist games.</span>
+          <span className="text-logo-accent">Beautiful worlds.</span>
+        </p>
+      </header>
 
-        <SiteFooter variant="home" className="mt-4 shrink-0 self-start lg:mt-8" />
+      <Dvor />
+
+      <div className="relative mx-auto w-full max-w-6xl px-4 pt-16 sm:px-10">
+        <SiteFooter variant="home" />
       </div>
     </main>
   );

@@ -11,18 +11,28 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="box-border flex min-h-dvh w-full max-w-[100vw] flex-col overflow-x-clip bg-[#1a1a1a] px-4 py-12 sm:px-16 lg:px-24">
-      <PageIcon />
-      <div className="mx-auto mt-10 w-full max-w-3xl flex-1 text-center sm:mt-14">
-        <div className="mb-8 flex justify-center text-white">
-          <DvorLogo size="large" />
+    <main className="relative flex min-h-dvh w-full max-w-[100vw] flex-col overflow-x-clip bg-background">
+      <div aria-hidden="true" className="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[40rem]" />
+
+      <div className="relative mx-auto flex w-full min-w-0 max-w-3xl flex-1 flex-col px-4 py-10 sm:px-10 sm:py-14">
+        <PageIcon />
+
+        <header className="rise flex flex-col gap-8 border-b border-logo-grid pb-12">
+          <DvorLogo size="large" className="text-white" />
+          <div className="flex flex-col gap-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-white/40">Legal</p>
+            <h1 className="font-bold uppercase leading-[0.95] tracking-[0.04em] text-white text-[clamp(2rem,9vw,5rem)]">
+              Privacy Policy
+            </h1>
+          </div>
+        </header>
+
+        <div className="rise rise-delay-1 mt-14">
+          <PrivacyPolicyContent />
         </div>
-        <h1 className="mb-12 text-white font-bold uppercase tracking-[0.08em] text-[clamp(1.5rem,5vw,2.5rem)]">
-          Privacy Policy
-        </h1>
-        <PrivacyPolicyContent />
+
+        <SiteFooter className="mt-24" />
       </div>
-      <SiteFooter className="mt-16" />
     </main>
   );
 }

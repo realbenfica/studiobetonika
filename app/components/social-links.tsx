@@ -59,10 +59,10 @@ function SocialIcon({
   );
 }
 
-export function SocialLinks({ className = "mt-8" }: { className?: string }) {
+export function SocialLinks({ className = "" }: { className?: string }) {
   return (
     <nav
-      className={`flex max-w-full flex-wrap items-center justify-start gap-5 sm:gap-8 ${className}`}
+      className={`flex max-w-full flex-wrap items-center gap-x-6 gap-y-4 ${className}`}
       aria-label="Social media"
     >
       {SOCIALS.map((social) => (
@@ -71,7 +71,7 @@ export function SocialLinks({ className = "mt-8" }: { className?: string }) {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-logo-grid transition-colors hover:text-logo-accent"
+          className="text-white/50 transition-colors hover:text-logo-accent"
           aria-label={social.label}
         >
           <SocialIcon

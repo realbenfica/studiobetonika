@@ -2,9 +2,10 @@ import Link from "next/link";
 import { SocialLinks } from "./social-links";
 
 const footerLinkText =
-  "text-[clamp(0.4375rem,2.5vw,0.875rem)] leading-none tracking-normal sm:tracking-[0.08em]";
+  "text-[clamp(0.6875rem,2.4vw,0.8125rem)] leading-none tracking-[0.12em]";
+
 const footerLegalText =
-  "text-[clamp(0.375rem,2vw,0.625rem)] leading-none tracking-normal sm:text-[clamp(0.4375rem,2.5vw,0.875rem)] sm:tracking-[0.08em]";
+  "text-[clamp(0.625rem,2vw,0.75rem)] leading-relaxed tracking-normal";
 
 type SiteFooterProps = {
   variant?: "default" | "home";
@@ -16,47 +17,48 @@ export function SiteFooter({ variant = "default", className = "" }: SiteFooterPr
 
   return (
     <footer
-      className={`pb-2 text-logo-grid uppercase ${
-        isHome ? "w-max max-w-full self-start text-left" : "mx-auto w-fit text-center"
+      className={`w-full pb-8 uppercase text-logo-grid ${
+        isHome ? "" : "border-t border-logo-grid pt-10"
       } ${className}`}
     >
-      {isHome && <SocialLinks className="mb-6" />}
+      <div className="flex flex-col items-center gap-8 text-center">
+        <SocialLinks className="justify-center" />
 
-      <div
-        className={`flex flex-nowrap items-center gap-x-1.5 whitespace-nowrap ${footerLinkText} sm:gap-x-3 ${
-          isHome ? "" : "justify-center"
-        }`}
-      >
-        {!isHome && (
-          <>
-            <Link
-              href="/dvor/press"
-              className="transition-colors hover:text-logo-accent"
-            >
-              Press
-            </Link>
-            <span aria-hidden="true">|</span>
-            <Link
-              href="/dvor/privacy-policy"
-              className="transition-colors hover:text-logo-accent"
-            >
-              Privacy Policy
-            </Link>
-            <span aria-hidden="true">|</span>
-          </>
-        )}
-        <a
-          href="mailto:hello@studiobetonika.com"
-          className="inline-flex items-center font-bold transition-colors hover:text-logo-accent"
+        <div
+          className={`flex flex-wrap items-center justify-center gap-x-4 gap-y-3 ${footerLinkText}`}
         >
-          <span>hello</span>
-          <span className="mx-0.5 inline-flex shrink-0 items-center justify-center border border-logo-grid px-0.5 leading-none">
-            @
-          </span>
-          <span>studiobetonika.com</span>
-        </a>
+          {!isHome && (
+            <>
+              <Link href="/dvor/press" className="transition-colors hover:text-logo-accent">
+                Press
+              </Link>
+              <span aria-hidden="true" className="text-white/20">
+                /
+              </span>
+              <Link href="/dvor/privacy-policy" className="transition-colors hover:text-logo-accent">
+                Privacy Policy
+              </Link>
+              <span aria-hidden="true" className="text-white/20">
+                /
+              </span>
+            </>
+          )}
+          <a
+            href="mailto:hello@studiobetonika.com"
+            className="inline-flex items-center font-bold transition-colors hover:text-logo-accent"
+          >
+            <span>hello</span>
+            <span className="mx-0.5 inline-flex shrink-0 items-center justify-center border border-logo-grid px-1 leading-none">
+              @
+            </span>
+            <span>studiobetonika.com</span>
+          </a>
+        </div>
       </div>
-      <p className={`mt-2 max-w-3xl normal-case leading-snug ${footerLegalText}`}>
+
+      <p
+        className={`mx-auto mt-8 max-w-3xl text-center normal-case text-white/30 ${footerLegalText}`}
+      >
         © 2026 Art Britannia Ltd (trading as Studio Betonika). Company No.
         16631916.
         <br />

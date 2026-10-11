@@ -1,9 +1,10 @@
 const sectionHeading =
-  "text-white/90 font-bold uppercase tracking-[0.08em]";
+  "flex items-center gap-4 text-white font-bold uppercase tracking-[0.12em] text-[clamp(1.125rem,3vw,1.5rem)] before:h-px before:w-8 before:shrink-0 before:bg-logo-accent";
 
 const subHeading = "text-white/80 font-bold tracking-[0.04em]";
 
-const linkClass = "text-logo-accent underline transition-colors hover:text-white";
+const linkClass =
+  "text-logo-accent underline underline-offset-4 decoration-logo-grid transition-colors hover:text-white hover:decoration-logo-accent break-all";
 
 const boldInline = "font-bold text-white/80";
 

@@ -2,6 +2,7 @@
 
 :root {
   --background: #1a1a1a;
+  --surface: #222120;
   --foreground: #ededed;
   --logo-grid: #5b5754;
   --logo-accent: #fbeccf;
@@ -11,6 +12,7 @@
   /* Resolve through --font-brand set by next/font on <html> */
   --font-sans: var(--font-brand), ui-sans-serif, system-ui, sans-serif;
   --color-background: #1a1a1a;
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-logo-grid: var(--logo-grid);
   --color-logo-accent: var(--logo-accent);
@@ -30,4 +32,223 @@ body {
   color: var(--foreground);
   font-family: var(--font-brand), ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+}
+
+::selection {
+  background: var(--logo-accent);
+  color: #1a1a1a;
+}
+
+:focus-visible {
+  outline: 2px solid var(--logo-accent);
+  outline-offset: 4px;
+}
+
+/* The logo's 4×4 grid, drawn as a faint blueprint behind each page. */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(91 87 84 / 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(91 87 84 / 0.22) 1px, transparent 1px);
+  background-size: 5.5rem 5.5rem;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 70%);
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 70%);
+}
+
+/* Hard-edged "poured concrete" shadow used on frames and buttons. */
+.slab-shadow {
+  box-shadow: 10px 10px 0 0 var(--logo-grid);
+}
+
+.rise {
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+
+.rise-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.rise-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.rise-delay-3 {
+  animation-delay: 0.36s;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── Studio logo ─────────────────────────────────────────────── */
+
+/* Each window blinks on once during the intro; a few keep flickering. */
+.logo-window {
+  animation: window-blink 0.7s ease-in-out var(--intro-delay) both;
+}
+
+.logo-window--idle {
+  animation:
+    window-blink 0.7s ease-in-out var(--intro-delay) both,
+    window-idle var(--idle-period) steps(1, end) var(--idle-delay) infinite;
+}
+
+/* The brand window switches on last and stays on. */
+.logo-window--brand {
+  animation: window-on 0.5s ease-out 1.45s both;
+}
+
+/* Hover sends a wave of light diagonally across the block. */
+.studio-logo:hover .logo-window {
+  animation: window-wave 1.1s ease-in-out var(--wave-delay) both;
+}
+
+.studio-logo:hover .logo-window--brand {
+  animation: none;
+}
+
+.logo-wordmark {
+  animation: wordmark-build 1.1s steps(9, end) 0.15s both;
+}
+
+@keyframes window-blink {
+  0%,
+  100% {
+    fill: var(--background);
+  }
+  35%,
+  55% {
+    fill: var(--logo-accent);
+  }
+}
+
+@keyframes window-on {
+  0% {
+    fill: var(--background);
+  }
+  30% {
+    fill: var(--logo-accent);
+  }
+  45% {
+    fill: var(--background);
+  }
+  100% {
+    fill: var(--logo-accent);
+  }
+}
+
+@keyframes window-idle {
+  0%,
+  100% {
+    fill: var(--background);
+  }
+  92%,
+  97% {
+    fill: var(--logo-accent);
+  }
+}
+
+@keyframes window-wave {
+  0%,
+  100% {
+    fill: var(--background);
+  }
+  30%,
+  60% {
+    fill: var(--logo-accent);
+  }
+}
+
+/* The wordmark is laid down in blocky steps, left to right. */
+@keyframes wordmark-build {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ── Dvor key art ───────────────────────────────────────────── */
+
+/* Heavy grid with a line through the centre, as on the Dvor cover. */
+.dvor-grid {
+  --line: rgb(72 72 72 / 0.55);
+  --cell: clamp(14rem, 34vw, 26rem);
+  background-image:
+    linear-gradient(
+      to right,
+      transparent calc(50% - 4px),
+      var(--line) calc(50% - 4px),
+      var(--line) calc(50% + 4px),
+      transparent calc(50% + 4px)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent calc(50% - 4px),
+      var(--line) calc(50% - 4px),
+      var(--line) calc(50% + 4px),
+      transparent calc(50% + 4px)
+    );
+  background-size: var(--cell) var(--cell);
+  background-position: 50% 0;
+}
+
+/* Stripes pour down from the top edge. */
+.stripe-pour {
+  animation: pour 1.9s cubic-bezier(0.65, 0, 0.2, 1) both;
+}
+
+@keyframes pour {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Hard concrete shadow that presses in on hover. */
+.press {
+  box-shadow: 6px 6px 0 #1a1a1a;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.press:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 #1a1a1a;
+}
+
+.press:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 #1a1a1a;
+}
+
+.press-static {
+  box-shadow: 6px 6px 0 #1a1a1a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .rise-delay-1,
+  .rise-delay-2,
+  .rise-delay-3,
+  .logo-window,
+  .logo-window--idle,
+  .logo-window--brand,
+  .studio-logo:hover .logo-window,
+  .logo-wordmark,
+  .stripe-pour {
+    animation: none;
+  }
 }
