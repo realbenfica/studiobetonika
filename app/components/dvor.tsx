@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import { DvorLogo } from "./dvor-logo";
 import { PlayStationLogo } from "./playstation-logo";
 import { SteamLogo } from "./steam-logo";
+import TrailerPlayer from "./trailer-player";
 
 /*
  * The Dvor block recreates the game's key art: light terrazzo concrete, a
@@ -118,14 +119,11 @@ export function Dvor() {
         </p>
 
         <figure className="rise rise-delay-3 m-0 mt-12 w-full sm:mt-16">
-          <div className="relative aspect-video w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_rgb(26_26_26_/_0.85)]">
-            <iframe
-              className="absolute inset-0 h-full w-full"
-              src="https://www.youtube.com/embed/1TmWJuN2piI"
-              title="Dvor trailer"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+          <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_rgb(26_26_26_/_0.85)]">
+            <TrailerPlayer
+              src="/videos/dvor-trailer.mp4"
+              poster="/images/dvor-trailer.png"
+              alt="Dvor trailer"
             />
           </div>
         </figure>

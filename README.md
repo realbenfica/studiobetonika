@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Dvor trailer
+
+The homepage uses a native video player in `app/components/trailer-player.tsx`,
+with Studio Betonika colours, PP Alex typography, square controls and concrete
+shadows. It shares Angelina's player behaviour: muted inline autoplay while
+visible, pausing offscreen, pause/play, seek, restart and sound controls. Manual
+pauses persist; reduced-motion visitors see the poster until they press Play.
+Controls appear on hover, keyboard focus or touch, and remain visible when paused.
+
+`public/videos/dvor-trailer.mp4` and `public/images/dvor-trailer.png` are copied
+byte for byte from Angelina's full Dvor trailer and poster. The video is
+1920×1080 at 24 fps, approximately 70.38 seconds, with the original AAC audio.
+The full trailer is used; no media is edited or recompressed here.

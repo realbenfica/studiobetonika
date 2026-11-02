@@ -1,0 +1,25 @@
+.video { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--background); color: var(--logo-accent); }
+.video video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.videoControls { position: absolute; right: 12px; bottom: 12px; left: 12px; z-index: 2; display: flex; align-items: center; gap: 8px; pointer-events: none; }
+.videoSound, .videoIconButton { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; flex-shrink: 0; padding: 10px 12px; border: 2px solid var(--background); border-radius: 0; background: var(--background); color: var(--logo-accent); box-shadow: 3px 3px 0 var(--background); font: inherit; font-size: 12px; font-weight: 700; line-height: 1; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; pointer-events: auto; }
+.videoSound:hover, .videoIconButton:hover { background: var(--logo-accent); color: var(--background); }
+.videoSound:focus-visible, .videoIconButton:focus-visible, .videoSeek input:focus-visible { outline: 2px solid var(--logo-accent); outline-offset: 3px; }
+.videoIconButton { width: 46px; padding: 9px; }
+.videoSecondaryControls { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+.videoSecondaryControls, .videoSoundHidden { opacity: 0; visibility: hidden; }
+.videoSeek { display: flex; align-items: center; flex: 1; min-width: 0; height: 46px; padding: 0 10px; border: 2px solid var(--background); background: var(--background); box-shadow: 3px 3px 0 var(--background); pointer-events: auto; }
+.videoSeek input { appearance: none; width: 100%; min-width: 0; height: 42px; margin: 0; padding: 0; background: transparent; color: var(--logo-accent); cursor: pointer; }
+.videoSeek input::-webkit-slider-runnable-track { height: 2px; background: linear-gradient(to right, var(--logo-accent) var(--video-progress), var(--logo-grid) var(--video-progress)); }
+.videoSeek input::-moz-range-track { height: 2px; background: linear-gradient(to right, var(--logo-accent) var(--video-progress), var(--logo-grid) var(--video-progress)); }
+.videoSeek input::-webkit-slider-thumb { appearance: none; width: 12px; height: 12px; margin-top: -5px; border: 0; border-radius: 0; background: var(--logo-accent); }
+.videoSeek input::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 0; background: var(--logo-accent); }
+.video[data-controls-visible="true"] :is(.videoSecondaryControls, .videoSoundHidden), .video:focus-visible :is(.videoSecondaryControls, .videoSoundHidden), .video:has(:focus-visible) :is(.videoSecondaryControls, .videoSoundHidden) { opacity: 1; visibility: visible; }
+@media (hover: hover) {
+  .video:hover :is(.videoSecondaryControls, .videoSoundHidden) { opacity: 1; visibility: visible; }
+}
+@media (max-width: 359px) {
+  .videoControls { right: 8px; bottom: 8px; left: 8px; gap: 6px; }
+  .videoSecondaryControls { gap: 6px; }
+  .videoSound { gap: 6px; padding-inline: 8px; font-size: 11px; }
+  .videoSeek { padding-inline: 6px; }
+}
