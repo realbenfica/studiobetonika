@@ -6,7 +6,11 @@
     "dev": "next dev --turbo -H 127.0.0.1",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "node scripts/deploy.mjs",
+    "ship": "node scripts/deploy.mjs --ship",
+    "release:check": "node scripts/deploy.mjs --check",
+    "test:deploy": "node --test scripts/deploy.test.mjs"
   },
   "dependencies": {
     "next": "16.2.6",

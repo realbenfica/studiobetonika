@@ -1,22 +1,26 @@
 ---
-description: Git workflow — what "push" means in this project
+description: When the user says "push", commit on main and release with npm run ship
 alwaysApply: true
 ---
 
-# Git "Push" Workflow
+# Push Workflow
 
-When the user says **push** (without further qualification), execute this workflow on **main**:
+Always work on `main`. There is no staging branch.
 
-1. **Commit** all changes on `main` (stage everything relevant, write a commit message, commit)
-2. **Push** `main` to `origin`
+A bare **push** means: commit on `main`, push to GitHub, **and** deploy to Vercel. This overrides any general rule that treats "push" as commit and `git push` only. The same applies to "ship", "deploy" and "push all branches":
 
-"Saying push" is explicit permission to commit — treat it as a commit request.
+1. **Commit** all relevant changes on `main` with a clear message.
+2. **Push and deploy** with `npm run ship`. Don't use a bare `git push`. It pushes `main`, verifies `origin/main` is that exact commit, replaces duplicate Git builds for that commit with a cached direct Vercel deployment, and verifies `www.studiobetonika.com` is live on it. See the Releases section of `AGENTS.md`.
 
-For any other variation (e.g. "just commit", "push without committing"), follow the user's exact wording.
+Report success only after `npm run ship` confirms the live deployment. Give its build time and end-to-end time separately.
 
-## Examples
+## Variants
 
 | User says | Action |
-|-----------|--------|
-| "push" | commit main → push main |
-| "just commit" | commit only (no push) |
+|-----|-----|
+| "push" / "ship" / "deploy" | commit main → `npm run ship` (push to GitHub and deploy to Vercel) |
+| "just commit" / "commit only" | commit only |
+| "do not deploy" | commit only; any push to `main` triggers a Vercel Git deployment |
+| "push without deploying" | explain that pushing `main` deploys via Git, and ask before pushing |
+
+For any other phrasing, follow the user's exact wording.

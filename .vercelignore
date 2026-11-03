@@ -1,0 +1,13 @@
+# Direct deployments upload committed source only; Vercel builds it remotely.
+# Root-only entries start with "/" so public/fonts/ is still uploaded.
+node_modules/
+.next/
+.vercel/
+.env*
+.DS_Store
+*.tsbuildinfo
+/next-env.d.ts
+/.claude/
+/.cursor/
+/fonts/
+/scripts/
