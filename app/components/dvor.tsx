@@ -103,22 +103,14 @@ export function Dvor() {
       <Backdrop />
 
       <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-4 pt-16 pb-20 sm:px-8 sm:pt-24 sm:pb-28">
-        <p className="rise bg-[#1a1a1a] px-3 py-2 text-[0.6875rem] uppercase tracking-[0.3em] text-logo-accent sm:text-xs">
-          A Studio Betonika game
-        </p>
-
         <h2
           id="dvor-title"
-          className="rise rise-delay-1 mt-8 text-[clamp(2.75rem,12vw,8rem)] leading-none text-white [filter:drop-shadow(0.05em_0.07em_0_rgb(26_26_26_/_0.6))]"
+          className="rise text-[clamp(2.75rem,12vw,8rem)] leading-none text-white [filter:drop-shadow(0.05em_0.07em_0_rgb(26_26_26_/_0.6))]"
         >
           <DvorLogo />
         </h2>
 
-        <p className="rise rise-delay-2 mt-8 max-w-xl bg-[#f2f0ea] px-4 py-3 text-center text-[clamp(0.875rem,2.4vw,1.0625rem)] leading-snug shadow-[4px_4px_0_#1a1a1a]">
-          A falling-block game about building, not clearing.
-        </p>
-
-        <figure className="rise rise-delay-3 m-0 mt-12 w-full sm:mt-16">
+        <figure className="rise rise-delay-1 m-0 mt-20 w-full sm:mt-28">
           <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_rgb(26_26_26_/_0.85)]">
             <TrailerPlayer
               src="/videos/dvor-trailer.mp4"
