@@ -136,8 +136,8 @@ export function Dvor() {
             </div>
           </div>
 
-          <figure className="order-1 m-0 w-0 min-w-full overflow-hidden">
-            <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_rgb(26_26_26_/_0.85)]">
+          <figure className="order-1 m-0 w-0 min-w-full">
+            <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[6px_6px_0_#1a1a1a]">
               <TrailerPlayer
                 src="/videos/dvor-trailer.mp4"
                 poster="/images/dvor-trailer.png"
