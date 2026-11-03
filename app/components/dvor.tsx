@@ -125,12 +125,12 @@ export function Dvor() {
             href="https://store.steampowered.com/app/4881830/Dvor/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Dvor now on Steam"
+            aria-label="Dvor available on Steam"
             className="press group flex items-center justify-between gap-4 border-2 border-[#1a1a1a] bg-[#1a1a1a] px-5 py-5 text-logo-accent sm:px-7"
           >
             <span className="flex flex-wrap items-center gap-x-3 gap-y-3 text-[clamp(1.125rem,3.4vw,1.625rem)] font-bold uppercase leading-none">
               <DvorLogo />
-              <span className="font-normal">now on</span>
+              <span className="font-normal">available on</span>
               <SteamLogo />
             </span>
             <span aria-hidden="true" className="text-xl transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
