@@ -110,25 +110,24 @@ export function Dvor() {
           <DvorLogo />
         </h2>
 
-        <div className="rise rise-delay-1 mt-20 inline-flex w-full max-w-full flex-col sm:mt-28 sm:w-auto">
-          <div className="order-2 mt-12 flex w-full flex-col gap-5 sm:mt-14 sm:flex-row sm:items-stretch">
+        <div className="rise rise-delay-1 mt-20 flex w-full max-w-[55rem] flex-col sm:mt-28">
+          <div className="order-2 mt-12 grid w-full grid-cols-1 gap-5 sm:mt-14 sm:grid-cols-3">
             <a
               href="https://store.steampowered.com/app/4881830/Dvor/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Dvor available on Steam"
-              className="press group flex w-full shrink-0 items-center justify-between gap-6 border-2 border-[#1a1a1a] bg-[#1a1a1a] px-5 py-5 text-logo-accent sm:w-auto sm:px-7"
+              className="press group relative flex items-center justify-center border-2 border-[#1a1a1a] bg-[#1a1a1a] px-11 py-5 text-logo-accent hover:bg-logo-accent hover:text-[#1a1a1a] max-[22rem]:px-4 sm:col-span-2 md:px-14"
             >
-              <span className="flex flex-nowrap items-center gap-x-3 whitespace-nowrap text-[clamp(1.125rem,3.4vw,1.625rem)] font-bold uppercase leading-none">
-                <DvorLogo />
+              <span className="flex flex-nowrap items-center gap-x-3 whitespace-nowrap text-[clamp(1.25rem,3.4vw,2rem)] font-bold uppercase leading-none">
                 <span className="font-normal">available on</span>
                 <SteamLogo />
               </span>
-              <span aria-hidden="true" className="text-xl transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+              <span aria-hidden="true" className="absolute right-5 text-xl transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 max-[22rem]:hidden md:right-7">
                 ↗
               </span>
             </a>
-            <div className="press-static flex w-full shrink-0 items-center justify-center gap-4 whitespace-nowrap border-2 border-[#1a1a1a] bg-[#f2f0ea] px-6 py-5 sm:w-auto">
+            <div className="press-static flex items-center justify-center gap-4 whitespace-nowrap border-2 border-[#1a1a1a] bg-[#f2f0ea] px-6 py-5 transition-colors hover:bg-[#b8621a] hover:text-white sm:max-md:flex-col sm:max-md:gap-2 sm:max-md:px-3">
               <span className="text-[0.6875rem] uppercase tracking-[0.25em]">
                 Coming to
               </span>
@@ -136,7 +135,7 @@ export function Dvor() {
             </div>
           </div>
 
-          <figure className="order-1 m-0 w-0 min-w-full">
+          <figure className="order-1 m-0 w-full">
             <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_#1a1a1a]">
               <TrailerPlayer
                 src="/videos/dvor-trailer.mp4"
@@ -146,7 +145,7 @@ export function Dvor() {
             </div>
           </figure>
 
-          <nav aria-label="Site pages" className="order-3 mt-5 grid w-0 min-w-full grid-cols-1 gap-5 sm:grid-cols-3">
+          <nav aria-label="Site pages" className="order-3 mt-5 grid w-full grid-cols-1 gap-5 sm:grid-cols-3">
             {LINKS.map((link) => {
               const className =
                 "press group flex flex-col gap-8 border-2 border-[#1a1a1a] bg-[#f2f0ea] p-5 transition-colors hover:bg-[var(--swatch)] hover:text-white sm:p-6";
