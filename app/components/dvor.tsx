@@ -102,7 +102,7 @@ export function Dvor() {
     >
       <Backdrop />
 
-      <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-4 pt-16 pb-20 sm:px-8 sm:pt-24 sm:pb-28">
+      <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center px-4 pt-16 pb-20 sm:px-8 sm:pt-24 sm:pb-28">
         <h2
           id="dvor-title"
           className="rise text-[clamp(2.75rem,12vw,8rem)] leading-none text-white [filter:drop-shadow(0.05em_0.07em_0_rgb(26_26_26_/_0.6))]"
@@ -110,79 +110,83 @@ export function Dvor() {
           <DvorLogo />
         </h2>
 
-        <figure className="rise rise-delay-1 m-0 mt-20 w-full sm:mt-28">
-          <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_rgb(26_26_26_/_0.85)]">
-            <TrailerPlayer
-              src="/videos/dvor-trailer.mp4"
-              poster="/images/dvor-trailer.png"
-              alt="Dvor trailer"
-            />
+        <div className="rise rise-delay-1 mt-20 inline-flex w-full max-w-full flex-col sm:mt-28 sm:w-auto">
+          <div className="order-2 mt-12 flex w-full flex-col gap-5 sm:mt-14 sm:flex-row sm:items-stretch">
+            <a
+              href="https://store.steampowered.com/app/4881830/Dvor/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dvor available on Steam"
+              className="press group flex w-full shrink-0 items-center justify-between gap-6 border-2 border-[#1a1a1a] bg-[#1a1a1a] px-5 py-5 text-logo-accent sm:w-auto sm:px-7"
+            >
+              <span className="flex flex-nowrap items-center gap-x-3 whitespace-nowrap text-[clamp(1.125rem,3.4vw,1.625rem)] font-bold uppercase leading-none">
+                <DvorLogo />
+                <span className="font-normal">available on</span>
+                <SteamLogo />
+              </span>
+              <span aria-hidden="true" className="text-xl transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                ↗
+              </span>
+            </a>
+            <div className="press-static flex w-full shrink-0 items-center justify-center gap-4 whitespace-nowrap border-2 border-[#1a1a1a] bg-[#f2f0ea] px-6 py-5 sm:w-auto">
+              <span className="text-[0.6875rem] uppercase tracking-[0.25em]">
+                Coming to
+              </span>
+              <PlayStationLogo className="text-[1.375rem]" />
+            </div>
           </div>
-        </figure>
 
-        <div className="mt-12 grid w-full gap-5 sm:mt-14 sm:grid-cols-[minmax(0,1fr)_auto]">
-          <a
-            href="https://store.steampowered.com/app/4881830/Dvor/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Dvor available on Steam"
-            className="press group flex items-center justify-between gap-4 border-2 border-[#1a1a1a] bg-[#1a1a1a] px-5 py-5 text-logo-accent sm:px-7"
-          >
-            <span className="flex flex-wrap items-center gap-x-3 gap-y-3 text-[clamp(1.125rem,3.4vw,1.625rem)] font-bold uppercase leading-none">
-              <DvorLogo />
-              <span className="font-normal">available on</span>
-              <SteamLogo />
-            </span>
-            <span aria-hidden="true" className="text-xl transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-              ↗
-            </span>
-          </a>
-          <div className="press-static flex items-center justify-center gap-4 border-2 border-[#1a1a1a] bg-[#f2f0ea] px-6 py-5">
-            <span className="text-[0.6875rem] uppercase tracking-[0.25em]">Coming to</span>
-            <PlayStationLogo className="text-[1.375rem]" />
-          </div>
-        </div>
+          <figure className="order-1 m-0 w-0 min-w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden border-[6px] border-[#1a1a1a] bg-black shadow-[14px_14px_0_rgb(26_26_26_/_0.85)]">
+              <TrailerPlayer
+                src="/videos/dvor-trailer.mp4"
+                poster="/images/dvor-trailer.png"
+                alt="Dvor trailer"
+              />
+            </div>
+          </figure>
 
-        <nav aria-label="Site pages" className="mt-5 grid w-full gap-5 sm:grid-cols-3">
-          {LINKS.map((link) => {
-            const className =
-              "press group flex flex-col gap-8 border-2 border-[#1a1a1a] bg-[#f2f0ea] p-5 transition-colors hover:bg-[var(--swatch)] hover:text-white sm:p-6";
-            const style = { "--swatch": link.color } as CSSProperties;
-            const content = (
-              <>
-                <span className="flex items-center gap-2 text-[0.6875rem] uppercase tracking-[0.25em] opacity-70">
-                  <span
-                    aria-hidden="true"
-                    className="size-2.5 bg-[var(--swatch)] group-hover:bg-white"
-                  />
-                  {link.kicker}
-                </span>
-                <span className="flex items-end justify-between gap-4 text-[clamp(1.0625rem,2.4vw,1.3125rem)] font-bold uppercase leading-none tracking-[0.08em]">
-                  {link.label}
-                  <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
-                    {link.external ? "↗" : "→"}
+          <nav aria-label="Site pages" className="order-3 mt-5 grid w-0 min-w-full grid-cols-1 gap-5 sm:grid-cols-3">
+            {LINKS.map((link) => {
+              const className =
+                "press group flex flex-col gap-8 border-2 border-[#1a1a1a] bg-[#f2f0ea] p-5 transition-colors hover:bg-[var(--swatch)] hover:text-white sm:p-6";
+              const style = { "--swatch": link.color } as CSSProperties;
+              const content = (
+                <>
+                  <span className="flex items-center gap-2 text-[0.6875rem] uppercase tracking-[0.25em] opacity-70">
+                    <span
+                      aria-hidden="true"
+                      className="size-2.5 bg-[var(--swatch)] group-hover:bg-white"
+                    />
+                    {link.kicker}
                   </span>
-                </span>
-              </>
-            );
-            return link.external ? (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={className}
-                style={style}
-              >
-                {content}
-              </a>
-            ) : (
-              <Link key={link.label} href={link.href} className={className} style={style}>
-                {content}
-              </Link>
-            );
-          })}
-        </nav>
+                  <span className="flex items-end justify-between gap-4 text-[clamp(1.0625rem,2.4vw,1.3125rem)] font-bold uppercase leading-none tracking-[0.08em]">
+                    {link.label}
+                    <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
+                      {link.external ? "↗" : "→"}
+                    </span>
+                  </span>
+                </>
+              );
+              return link.external ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                  style={style}
+                >
+                  {content}
+                </a>
+              ) : (
+                <Link key={link.label} href={link.href} className={className} style={style}>
+                  {content}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
       </div>
     </section>
   );
