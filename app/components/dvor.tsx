@@ -119,19 +119,19 @@ export function Dvor() {
               aria-label="Dvor available on Steam"
               className="press group relative flex items-center justify-center border-2 border-[#1a1a1a] bg-[#1a1a1a] px-11 py-5 text-logo-accent hover:bg-logo-accent hover:text-[#1a1a1a] max-[22rem]:px-4 sm:col-span-2 md:px-14"
             >
-              <span className="flex flex-nowrap items-center gap-x-3 whitespace-nowrap text-[clamp(1.25rem,3.4vw,2rem)] font-bold uppercase leading-none">
+              <span className="block whitespace-nowrap text-[clamp(1.25rem,3.4vw,2rem)] font-bold uppercase leading-none">
                 <span className="font-normal">available on</span>
-                <SteamLogo />
+                <SteamLogo className="ml-3" />
               </span>
               <span aria-hidden="true" className="absolute right-5 text-xl transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 max-[22rem]:hidden md:right-7">
                 ↗
               </span>
             </a>
-            <div className="press-static flex items-center justify-center gap-4 whitespace-nowrap border-2 border-[#1a1a1a] bg-[#f2f0ea] px-6 py-5 transition-colors hover:bg-[#b8621a] hover:text-white sm:max-md:flex-col sm:max-md:gap-2 sm:max-md:px-3">
+            <div className="press-static flex items-center justify-center gap-4 whitespace-nowrap border-2 border-[#1a1a1a] bg-[#f2f0ea] px-6 py-5 transition-colors hover:bg-[#b8621a] hover:text-white sm:max-lg:flex-col sm:max-lg:gap-2 sm:max-lg:px-3">
               <span className="text-[0.6875rem] uppercase tracking-[0.25em]">
                 Coming to
               </span>
-              <PlayStationLogo className="text-[1.375rem]" />
+              <PlayStationLogo className="text-[1.625rem]" />
             </div>
           </div>
 
