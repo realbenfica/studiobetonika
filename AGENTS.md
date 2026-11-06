@@ -6,7 +6,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ## Releases
 
-Production is the Vercel project `studiobetonika` (team `realbenficas-projects`), built from `main` on `realbenfica/studiobetonika` and served at `www.studiobetonika.com`. The project IDs live in `scripts/deploy.mjs`.
+Production is the Vercel project `studiobetonika` (team `realbenficas-projects`), built from `main` on `alex-severino/studiobetonika` (GitHub account renamed from `realbenfica`) and served at `www.studiobetonika.com`. The project IDs live in `scripts/deploy.mjs`.
 
 - A bare "push" means commit on `main`, push to GitHub, and deploy to Vercel. This overrides any general rule that treats "push" as `git push` only. After committing on `main`, release with `npm run ship`. It requires a clean tree, pushes `main`, confirms `origin/main` is the exact commit, and deploys with the cached Vercel CLI path (`vercel deploy --prod`, built remotely). It cancels only pending Git production builds of `main` for that same commit, and skips rebuilding when `www.studiobetonika.com` already serves that commit. It then checks that the domain is READY on the commit, returns HTTP 200, and has no duplicate builds left. It reports build time and end-to-end time separately.
 - `npm run release:check` is read-only: commit, remote, live deployment, and pending duplicates. `npm run deploy` deploys a commit already pushed, without pushing. `npm run test:deploy` tests the safeguards.
